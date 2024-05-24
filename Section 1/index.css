@@ -1,0 +1,41 @@
+/* When working with CSS. in order to actually work on an element in css we need to associate a class name.
+
+In that regard. we put class names in the HTML file inside a tag like so
+
+<h2 class="name"> </h2>.
+
+to note do not use a capital letter to name an element.
+If you would like to use multiple words to describe a name we use 2 options 1 is camelCase notation and the other is using hyphens, below are some examples.
+
+camelCase = <h2 class="myName"></h2>
+
+hyphen = <h2 class"my-name"></h2>
+
+We ONLY use a space when we are creating different CSS elements. this is a topic that will be further expanded upon in a different section.
+
+Now that h2 element is known as name. 
+When calling an element in css we input it on the separate css file like so.
+
+.name{}
+
+Now that you can properly name and call an HTML element in a css file. lets take a look at how we start the styling process, the next example is how a typical element may look.
+
+.name{
+  display:block;
+  width:100%;
+  height:100%;
+  position:absolute;
+  border: dashed;
+  border-radius: 5px;
+  background-color: #2b2b2b;
+  margin: 50px;
+  padding: 10px;  
+}
+
+Thats a lot to take in all at once, dont worry we are going to learn all of these and their variables today :)
+
+Starting with display:
+
+
+
+*/
