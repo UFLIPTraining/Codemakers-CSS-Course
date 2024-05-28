@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Advanced Effects and Animations</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Images and Media</title>
+    <link rel="stylesheet" href="/src/css/styles.css" />
+    <script src="/src/js/main.js" defer></script>
   </head>
   <body>
     <header>
-      <h1>Advanced Effects and Animations</h1>
+      <h1>Images and Media</h1>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -34,7 +35,7 @@
             >
           </li>
           <li>
-            <a href="advancedeffectsandanimations.html" class="active"
+            <a href="advancedeffectsandanimations.html"
               >Advanced Effects and Animations</a
             >
           </li>
@@ -43,7 +44,9 @@
               >Navigation and UI Elements</a
             >
           </li>
-          <li><a href="imagesandmedia.html">Images and Media</a></li>
+          <li>
+            <a href="imagesandmedia.html" class="active">Images and Media</a>
+          </li>
           <li><a href="responsivedesign.html">Responsive Design</a></li>
           <li><a href="cssgrid.html">CSS Grid</a></li>
           <li>
@@ -66,25 +69,49 @@
     </header>
     <main>
       <section>
-        <h2>CSS Transitions</h2>
+        <h2>CSS Images</h2>
         <p>
-          Learn how to create smooth transitions in CSS to enhance the user
-          experience.
+          Learn how to style images in CSS, including responsive images, image
+          borders, and image hover effects.
         </p>
+        <h3>Example Exercise</h3>
+        <p>Try styling an image with borders and hover effects:</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Images Exercise&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;img src="example.jpg" alt="Example Image" class="image-example"&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
       </section>
       <section>
-        <h2>CSS Animations</h2>
+        <h2>CSS Videos</h2>
         <p>
-          Discover how to create animations in CSS to bring your web pages to
-          life.
+          Discover how to style and control videos in CSS, including responsive
+          videos and custom controls.
         </p>
-      </section>
-      <section>
-        <h2>CSS Transformations</h2>
-        <p>
-          Explore the different transformation properties in CSS, including
-          scaling, rotating, and skewing elements.
-        </p>
+        <h3>Example Exercise</h3>
+        <p>Try styling a video element:</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Videos Exercise&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;video class="video-example" controls&gt;
+        &lt;source src="example.mp4" type="video/mp4"&gt;
+        Your browser does not support the video tag.
+    &lt;/video&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
       </section>
     </main>
     <footer>

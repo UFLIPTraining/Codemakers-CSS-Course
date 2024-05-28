@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lists, Tables, and Forms</title>
+    <link rel="stylesheet" href="/src/css/styles.css" />
+    <script src="/src/js/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Lists, Tables, and Forms</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="introduction.html">Introduction and Basics</a></li>
+        <li><a href="colorsandbackgrounds.html">Colors and Backgrounds</a></li>
+        <li><a href="boxmodelandlayout.html">Box Model and Layout</a></li>
+        <li>
+          <a href="typographyandtextstyling.html"
+            >Typography and Text Styling</a
+          >
+        </li>
+        <li>
+          <a href="listsandtablesandforms.html" class="active"
+            >Lists, Tables, and Forms</a
+          >
+        </li>
+        <li><a href="positioningandlayout.html">Positioning and Layout</a></li>
+        <li>
+          <a href="advancedselectorsandpseudoclasses.html"
+            >Advanced Selectors and Pseudo-classes</a
+          >
+        </li>
+        <li>
+          <a href="advancedeffectsandanimations.html"
+            >Advanced Effects and Animations</a
+          >
+        </li>
+        <li>
+          <a href="navigationanduielements.html">Navigation and UI Elements</a>
+        </li>
+        <li><a href="imagesandmedia.html">Images and Media</a></li>
+        <li><a href="responsivedesign.html">Responsive Design</a></li>
+        <li><a href="cssgrid.html">CSS Grid</a></li>
+        <li>
+          <a href="flexboxandlayouttechniques.html"
+            >Flexbox and Layout Techniques</a
+          >
+        </li>
+        <li>
+          <a href="advancedfeaturesandfunctions.html"
+            >Advanced Features and Functions</a
+          >
+        </li>
+        <li>
+          <a href="toolsreferencesandpractices.html"
+            >Tools, References, and Practices</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h2>CSS Lists</h2>
+        <p>
+          Style lists in CSS, including ordered lists, unordered lists, and
+          custom list styles.
+        </p>
+        <h3>Ordered and Unordered Lists</h3>
+        <p>
+          CSS allows you to style both ordered and unordered lists with various
+          properties such as <code>list-style-type</code>,
+          <code>list-style-position</code>, and <code>list-style-image</code>.
+          Here is an example:
+        </p>
+        <pre><code>
+/* styles.css */
+.list-example ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+.list-example ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}</code></pre>
+        <h3>Example Exercise</h3>
+        <p>Try creating an ordered and unordered list with custom styles:</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Lists Exercise&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="list-example"&gt;
+        &lt;ul&gt;
+            &lt;li&gt;List Item 1&lt;/li&gt;
+            &lt;li&gt;List Item 2&lt;/li&gt;
+            &lt;li&gt;List Item 3&lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ol&gt;
+            &lt;li&gt;List Item 1&lt;/li&gt;
+            &lt;li&gt;List Item 2&lt;/li&gt;
+            &lt;li&gt;List Item 3&lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </section>
+      <section>
+        <h2>CSS Tables</h2>
+        <p>
+          Learn how to style tables in CSS, including borders, spacing, and
+          responsive tables.
+        </p>
+        <h3>Basic Table Styling</h3>
+        <p>
+          CSS allows you to style tables using properties like
+          <code>border</code>, <code>padding</code>, and
+          <code>text-align</code>. Here is an example:
+        </p>
+        <pre><code>
+/* styles.css */
+.table-example table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-example th, .table-example td {
+    border: 1px solid #00cdff;
+    padding: 8px;
+    text-align: left;
+}
+.table-example th {
+    background-color: #232323;
+    color: #fff;
+}</code></pre>
+        <h3>Example Exercise</h3>
+        <p>Try creating a table with custom styles:</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Tables Exercise&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="table-example"&gt;
+        &lt;table&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Header 1&lt;/th&gt;
+                &lt;th&gt;Header 2&lt;/th&gt;
+                &lt;th&gt;Header 3&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Data 1&lt;/td&gt;
+                &lt;td&gt;Data 2&lt;/td&gt;
+                &lt;td&gt;Data 3&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Data 4&lt;/td&gt;
+                &lt;td&gt;Data 5&lt;/td&gt;
+                &lt;td&gt;Data 6&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </section>
+      <section>
+        <h2>CSS Forms</h2>
+        <p>
+          Discover how to style forms in CSS, including input fields, labels,
+          and validation.
+        </p>
+        <h3>Basic Form Styling</h3>
+        <p>
+          CSS allows you to style forms using properties like
+          <code>padding</code>, <code>margin</code>, and <code>border</code>.
+          Here is an example:
+        </p>
+        <pre><code>
+/* styles.css */
+.form-example input[type="text"], .form-example input[type="email"], .form-example input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #00cdff;
+    border-radius: 4px;
+}
+.form-example label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-example button {
+    padding: 10px 15px;
+    background-color: #00cdff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-example button:hover {
+    background-color: #1c75bc;
+}</code></pre>
+        <h3>Example Exercise</h3>
+        <p>Try creating a form with custom styles:</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Forms Exercise&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="form-example"&gt;
+        &lt;form&gt;
+            &lt;label for="name"&gt;Name:&lt;/label&gt;
+            &lt;input type="text" id="name" name="name"&gt;
+            &lt;label for="email"&gt;Email:&lt;/label&gt;
+            &lt;input type="email" id="email" name="email"&gt;
+            &lt;label for="password"&gt;Password:&lt;/label&gt;
+            &lt;input type="password" id="password" name="password"&gt;
+            &lt;button type="submit"&gt;Submit&lt;/button&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
