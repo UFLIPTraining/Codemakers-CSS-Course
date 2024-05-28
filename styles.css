@@ -1,0 +1,103 @@
+/* Unique color values */
+/* #444;
+#fff;
+#232323;
+#00cdff;
+#bebcbc;
+#1c75bc;
+#e55440;
+#febd1d;
+#89d99d;
+#575757;
+#b3b3b3;
+#d78d24;
+rgba(35, 35, 35, 0.95);
+rgba(0, 205, 255, 0.4);
+rgba(254, 189, 29, 0.9); */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #444;
+  color: #fff;
+}
+
+header {
+  background: #1c75bc;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensures the items wrap to a new line if needed */
+}
+
+header nav ul li {
+  margin: 0.5em 1em; /* Adds some vertical margin for wrapped items */
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5em 1em; /* Adds padding for better touch targets */
+  display: inline-block;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2em 1em;
+  margin-top: 100px; /* Offset for fixed header */
+}
+
+h2,
+h3 {
+  color: #bebcbc;
+}
+
+section {
+  background: #232323;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section p {
+  margin-bottom: 1em;
+}
+
+footer {
+  background: #444;
+  color: #bebcbc;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #444;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
