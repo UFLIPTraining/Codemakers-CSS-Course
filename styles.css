@@ -27,47 +27,58 @@ body {
 header {
   background: #1c75bc;
   color: #fff;
-  padding: 1em 0;
+  padding: 1em;
   text-align: center;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
   margin: 0;
+  font-size: 2em;
 }
 
-header nav ul {
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  background: #232323;
+  padding-top: 0; /* Removes the gap at the top */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  overflow-y: auto; /* Allows scrolling if content is too long */
+}
+
+nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; /* Ensures the items wrap to a new line if needed */
 }
 
-header nav ul li {
-  margin: 0.5em 1em; /* Adds some vertical margin for wrapped items */
+nav ul li {
+  margin: 1.9px;
 }
 
-header nav ul li a {
+nav ul li a {
+  display: block;
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
-  padding: 0.5em 1em; /* Adds padding for better touch targets */
-  display: inline-block;
+  padding: 9px;
+  border-bottom: 1px solid #444;
+  transition: background 0.3s, color 0.3s;
+  text-align: center;
 }
 
-header nav ul li a:hover {
-  text-decoration: underline;
+nav ul li a:hover,
+nav ul li a.active {
+  background: #1c75bc;
+  color: #fff;8
 }
 
 main {
+  margin-left: 220px; /* Space for the vertical nav */
   padding: 2em 1em;
-  margin-top: 100px; /* Offset for fixed header */
 }
 
 h2,
@@ -80,10 +91,14 @@ section {
   padding: 1.5em;
   margin-bottom: 1.5em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centers the text within each section */
 }
 
-section p {
-  margin-bottom: 1em;
+section p,
+section ul {
+  text-align: left; /* Aligns paragraphs and lists to the left for better readability */
+  margin: 0 auto;
+  max-width: 800px; /* Limits the width of the content for better readability */
 }
 
 footer {
