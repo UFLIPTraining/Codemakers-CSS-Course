@@ -37,6 +37,25 @@ header h1 {
   font-size: 2em;
 }
 
+.toggle-button {
+  background-color: #1c75bc;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.toggle-button img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.toggle-button img.rotated {
+  transform: rotate(180deg);
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -48,6 +67,7 @@ nav {
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   overflow-y: auto; /* Allows scrolling if content is too long */
+  transition: transform 0.3s ease;
 }
 
 nav ul {
