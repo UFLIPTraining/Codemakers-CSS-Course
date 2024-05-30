@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positioning and Layout</title>
+    <link rel="stylesheet" href="/src/css/styles.css" />
+    <script src="/src/js/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Positioning and Layout</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="introduction.html">Introduction and Basics</a></li>
+        <li><a href="colorsandbackgrounds.html">Colors and Backgrounds</a></li>
+        <li><a href="boxmodelandlayout.html">Box Model and Layout</a></li>
+        <li>
+          <a href="typographyandtextstyling.html"
+            >Typography and Text Styling</a
+          >
+        </li>
+        <li>
+          <a href="listsandtablesandforms.html">Lists, Tables, and Forms</a>
+        </li>
+        <li>
+          <a href="positioningandlayout.html" class="active"
+            >Positioning and Layout</a
+          >
+        </li>
+        <li>
+          <a href="advancedselectorsandpseudoclasses.html"
+            >Advanced Selectors and Pseudo-classes</a
+          >
+        </li>
+        <li>
+          <a href="advancedeffectsandanimations.html"
+            >Advanced Effects and Animations</a
+          >
+        </li>
+        <li>
+          <a href="navigationanduielements.html">Navigation and UI Elements</a>
+        </li>
+        <li><a href="imagesandmedia.html">Images and Media</a></li>
+        <li><a href="responsivedesign.html">Responsive Design</a></li>
+        <li><a href="cssgrid.html">CSS Grid</a></li>
+        <li>
+          <a href="flexboxandlayouttechniques.html"
+            >Flexbox and Layout Techniques</a
+          >
+        </li>
+        <li>
+          <a href="advancedfeaturesandfunctions.html"
+            >Advanced Features and Functions</a
+          >
+        </li>
+        <li>
+          <a href="toolsreferencesandpractices.html"
+            >Tools, References, and Practices</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h2>CSS Positioning</h2>
+        <p>
+          Discover the different positioning techniques in CSS, including
+          static, relative, absolute, fixed, and sticky positioning.
+        </p>
+        <h3>Example Exercise</h3>
+        <p>Try using different positioning techniques:</p>
+        <pre><code>.static-position {
+  position: static; /* Default position */
+}
+
+.relative-position {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.absolute-position {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.fixed-position {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+.sticky-position {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  background-color: yellow;
+  padding: 50px;
+  font-size: 20px;
+}</code></pre>
+        <h4>HTML:</h4>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Positioning Exercise&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="static-position"&gt;Static Position&lt;/div&gt;
+    &lt;div class="relative-position"&gt;Relative Position&lt;/div&gt;
+    &lt;div class="absolute-position"&gt;Absolute Position&lt;/div&gt;
+    &lt;div class="fixed-position"&gt;Fixed Position&lt;/div&gt;
+    &lt;div class="sticky-position"&gt;Sticky Position&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </section>
+      <section>
+        <h2>CSS Floats</h2>
+        <p>
+          Learn how to use floats in CSS to create layouts and how to clear
+          floats properly.
+        </p>
+        <h3>Example Exercise</h3>
+        <p>Try creating a layout using floats:</p>
+        <pre><code>.float-container {
+  width: 100%;
+}
+
+.float-left {
+  float: left;
+  width: 45%;
+  background-color: lightblue;
+  padding: 20px;
+}
+
+.float-right {
+  float: right;
+  width: 45%;
+  background-color: lightgreen;
+  padding: 20px;
+}</code></pre>
+        <h4>HTML:</h4>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Floats Exercise&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="float-container"&gt;
+        &lt;div class="float-left"&gt;Left Float&lt;/div&gt;
+        &lt;div class="float-right"&gt;Right Float&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </section>
+      <section>
+        <h2>CSS Clearfix</h2>
+        <p>
+          Understand the clearfix technique and how to use it to clear floats in
+          CSS.
+        </p>
+        <h3>Example Exercise</h3>
+        <p>Try using the clearfix technique:</p>
+        <pre><code>.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.clearfix-container {
+  background-color: lightgrey;
+}
+
+.float-left, .float-right {
+  float: left; /* Ensure both floats are left-aligned for this example */
+  width: 45%;
+  padding: 20px;
+}</code></pre>
+        <h4>HTML:</h4>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Clearfix Exercise&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="clearfix-container clearfix"&gt;
+        &lt;div class="float-left"&gt;Left Float&lt;/div&gt;
+        &lt;div class="float-right"&gt;Right Float&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
