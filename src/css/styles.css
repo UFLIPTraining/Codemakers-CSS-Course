@@ -95,8 +95,8 @@ section {
 
 section p,
 section ul {
-  text-align: left; /* Aligns paragraphs and lists to the left for better readability */
-  max-width: 800px; /* Limits the width of the content for better readability */
+  text-align: left;
+  max-width: 800px;
 }
 
 footer {
