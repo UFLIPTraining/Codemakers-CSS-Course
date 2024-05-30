@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction and Basics</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Introduction and Basics</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="introduction.html" class="active">Introduction and Basics</a>
+        </li>
+        <li><a href="colorsandbackgrounds.html">Colors and Backgrounds</a></li>
+        <li><a href="boxmodelandlayout.html">Box Model and Layout</a></li>
+        <li>
+          <a href="typographyandtextstyling.html"
+            >Typography and Text Styling</a
+          >
+        </li>
+        <li>
+          <a href="listsandtablesandforms.html">Lists, Tables, and Forms</a>
+        </li>
+        <li><a href="positioningandlayout.html">Positioning and Layout</a></li>
+        <li>
+          <a href="advancedselectorsandpseudoclasses.html"
+            >Advanced Selectors and Pseudo-classes</a
+          >
+        </li>
+        <li>
+          <a href="advancedeffectsandanimations.html"
+            >Advanced Effects and Animations</a
+          >
+        </li>
+        <li>
+          <a href="navigationanduielements.html">Navigation and UI Elements</a>
+        </li>
+        <li><a href="imagesandmedia.html">Images and Media</a></li>
+        <li><a href="responsivedesign.html">Responsive Design</a></li>
+        <li><a href="cssgrid.html">CSS Grid</a></li>
+        <li>
+          <a href="flexboxandlayouttechniques.html"
+            >Flexbox and Layout Techniques</a
+          >
+        </li>
+        <li>
+          <a href="advancedfeaturesandfunctions.html"
+            >Advanced Features and Functions</a
+          >
+        </li>
+        <li>
+          <a href="toolsreferencesandpractices.html"
+            >Tools, References, and Practices</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h2>Introduction to CSS</h2>
+        <p>Learn the basics of CSS, including its history and core concepts.</p>
+      </section>
+      <section>
+        <h2>History of CSS</h2>
+        <p>
+          CSS was first proposed by Håkon Wium Lie on October 10, 1994, and it
+          was officially adopted as a W3C recommendation in December 1996. Since
+          then, CSS has undergone several revisions:
+        </p>
+        <ul>
+          <li>
+            <strong>CSS1 (1996):</strong> Introduced basic features like font
+            properties, text alignment, and simple box model properties.
+          </li>
+          <li>
+            <strong>CSS2 (1998):</strong> Added more sophisticated layouts,
+            including positioning and z-index.
+          </li>
+          <li>
+            <strong>CSS3 (2001):</strong> Introduced modules for easier updates
+            and added features like media queries, selectors, and enhanced
+            styling capabilities.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Why CSS Was Created</h2>
+        <p>
+          Before CSS, web developers used HTML tags like
+          <code>&lt;font&gt;</code> and <code>&lt;center&gt;</code> to style web
+          pages. This made HTML documents bulky and difficult to maintain. CSS
+          was created to:
+        </p>
+        <ul>
+          <li>
+            Separate content from presentation, making HTML cleaner and more
+            semantic.
+          </li>
+          <li>
+            Provide more styling options, allowing for sophisticated and
+            flexible styling.
+          </li>
+          <li>
+            Enable responsive design, ensuring web pages look good on different
+            devices and screen sizes.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>How CSS Works</h2>
+        <p>
+          CSS works by associating style rules with HTML elements. These rules
+          are defined in CSS files or within the <code>&lt;style&gt;</code> tag
+          in an HTML document. A CSS rule consists of a selector and a
+          declaration block:
+        </p>
+        <pre><code>selector {
+  property: value;
+}</code></pre>
+        <p><strong>Example:</strong></p>
+        <pre><code>body {
+  background-color: lightblue;
+}
+h1 {
+  color: navy;
+  margin-left: 20px;
+}</code></pre>
+      </section>
+      <section>
+        <h2>CSS Syntax</h2>
+        <p>
+          The syntax of a CSS rule set consists of a selector and a declaration
+          block:
+        </p>
+        <ul>
+          <li>
+            <strong>Selector:</strong> Indicates the HTML element to be styled.
+          </li>
+          <li>
+            <strong>Declaration Block:</strong> Contains one or more
+            declarations separated by semicolons. Each declaration includes a
+            CSS property name and a value, separated by a colon.
+          </li>
+        </ul>
+        <p><strong>Example:</strong></p>
+        <pre><code>p {
+  color: red;
+  font-size: 16px;
+}</code></pre>
+      </section>
+      <section>
+        <h2>CSS Selectors</h2>
+        <p>
+          Selectors are used to target HTML elements for styling. Here are some
+          common selectors:
+        </p>
+        <ul>
+          <li>
+            <strong>Type Selector:</strong> Selects all elements of a given
+            type.
+            <pre><code>p {
+  color: blue;
+}</code></pre>
+          </li>
+          <li>
+            <strong>Class Selector:</strong> Selects elements with a specific
+            class attribute.
+            <pre><code>.intro {
+  font-size: 20px;
+}</code></pre>
+          </li>
+          <li>
+            <strong>ID Selector:</strong> Selects a single element with a
+            specific id attribute.
+            <pre><code>#header {
+  background-color: yellow;
+}</code></pre>
+          </li>
+          <li>
+            <strong>Attribute Selector:</strong> Selects elements with a
+            specific attribute.
+            <pre><code>a[target="_blank"] {
+  color: red;
+}</code></pre>
+          </li>
+          <li>
+            <strong>Descendant Selector:</strong> Selects elements that are
+            descendants of another element.
+            <pre><code>div p {
+  margin: 10px;
+}</code></pre>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>CSS Properties and Values</h2>
+        <p>
+          CSS properties are used to style HTML elements. Here are some basic
+          properties:
+        </p>
+        <ul>
+          <li>
+            <strong>Color:</strong> Sets the color of the text.
+            <pre><code>color: red;</code></pre>
+          </li>
+          <li>
+            <strong>Background-color:</strong> Sets the background color of an
+            element.
+            <pre><code>background-color: lightgray;</code></pre>
+          </li>
+          <li>
+            <strong>Font-size:</strong> Sets the size of the font.
+            <pre><code>font-size: 16px;</code></pre>
+          </li>
+          <li>
+            <strong>Margin:</strong> Sets the space outside an element.
+            <pre><code>margin: 20px;</code></pre>
+          </li>
+          <li>
+            <strong>Padding:</strong> Sets the space inside an element.
+            <pre><code>padding: 10px;</code></pre>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Example HTML Document with Basic CSS</h2>
+        <p>
+          Here is a semantic HTML document that you can use to practice writing
+          CSS:
+        </p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;My First CSS Page&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;section&gt;
+            &lt;h2&gt;About Me&lt;/h2&gt;
+            &lt;p&gt;Hello! I am learning CSS to build beautiful websites.&lt;/p&gt;
+        &lt;/section&gt;
+        &lt;section&gt;
+            &lt;h2&gt;My Services&lt;/h2&gt;
+            &lt;p&gt;I offer web development and design services.&lt;/p&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2024 My Website. All rights reserved.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </section>
+      <section>
+        <h2>Example CSS Styles</h2>
+        <p>
+          Create a <code>styles.css</code> file with the following content to
+          style the HTML document:
+        </p>
+        <pre><code>body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 1em;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2em 1em;
+  margin-top: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+section {
+  background: #fff;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section p {
+  margin-bottom: 1em;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}</code></pre>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
