@@ -74,6 +74,22 @@
           Learn how to create smooth transitions in CSS to enhance the user
           experience.
         </p>
+
+        <h3>Transition Property</h3>
+        <p>
+          The <code>transition</code> property is used to create a smooth
+          transition effect between different states of an element. For example:
+        </p>
+        <pre><code>button {
+    background-color: #1c75bc;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00cdff;
+}</code></pre>
+        <p>This will create a smooth background color transition on hover.</p>
+
         <h3>Example Exercise</h3>
         <p>Try using CSS transitions:</p>
         <pre><code>&lt;!DOCTYPE html&gt;
@@ -89,12 +105,36 @@
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
       </section>
+
       <section>
         <h2>CSS Animations</h2>
         <p>
           Discover how to create animations in CSS to bring your web pages to
           life.
         </p>
+
+        <h3>@keyframes Rule</h3>
+        <p>
+          The <code>@keyframes</code> rule is used to define the animation. For
+          example:
+        </p>
+        <pre><code>@keyframes example {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100px);
+    }
+}
+
+.animation-example {
+    animation: example 2s infinite;
+}</code></pre>
+        <p>
+          This will create an animation that moves an element 100px to the
+          right.
+        </p>
+
         <h3>Example Exercise</h3>
         <p>Try using CSS animations:</p>
         <pre><code>&lt;!DOCTYPE html&gt;
@@ -110,12 +150,24 @@
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
       </section>
+
       <section>
         <h2>CSS Transformations</h2>
         <p>
           Explore the different transformation properties in CSS, including
           scaling, rotating, and skewing elements.
         </p>
+
+        <h3>Transform Property</h3>
+        <p>
+          The <code>transform</code> property is used to apply a 2D or 3D
+          transformation to an element. For example:
+        </p>
+        <pre><code>div {
+    transform: rotate(45deg);
+}</code></pre>
+        <p>This will rotate the div 45 degrees.</p>
+
         <h3>Example Exercise</h3>
         <p>Try using CSS transformations:</p>
         <pre><code>&lt;!DOCTYPE html&gt;

@@ -73,7 +73,23 @@
           layouts. Flexbox is a layout model that allows you to design complex
           layout structures with ease.
         </p>
-        <h3>Example: Basic Flexbox Layout</h3>
+
+        <h3>Basic Flexbox Layout</h3>
+        <p>Here's a basic example of using Flexbox:</p>
+        <pre><code>/* styles.css */
+.flex-container {
+    display: flex;
+    background-color: #333;
+}
+
+.flex-item {
+    background-color: #1c75bc;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}</code></pre>
         <p>Here's a basic example of using Flexbox:</p>
         <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -91,6 +107,7 @@
     &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
+
         <h3>Exercise: Create a Flexbox Layout</h3>
         <p>Try creating a Flexbox layout with different flex properties:</p>
         <pre><code>&lt;!DOCTYPE html&gt;
@@ -110,6 +127,7 @@
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
       </section>
+
       <section>
         <h2>CSS Grid</h2>
         <p>
@@ -117,7 +135,26 @@
           and responsive grid layouts. CSS Grid is a powerful layout system that
           allows you to create two-dimensional layouts.
         </p>
-        <h3>Example: Basic Grid Layout</h3>
+
+        <h3>Basic Grid Layout</h3>
+        <p>Here's a basic example of using CSS Grid:</p>
+        <pre><code>/* styles.css */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #333;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: #1c75bc;
+    color: white;
+    border: 1px solid #444;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}</code></pre>
         <p>Here's a basic example of using CSS Grid:</p>
         <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -138,6 +175,7 @@
     &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
+
         <h3>Exercise: Create a Grid Layout</h3>
         <p>Try creating a Grid layout with different grid properties:</p>
         <pre><code>&lt;!DOCTYPE html&gt;

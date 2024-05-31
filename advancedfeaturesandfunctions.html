@@ -73,6 +73,19 @@
           throughout your CSS.
         </p>
         <h3>Example: Using CSS Variables</h3>
+        <pre><code>/* styles.css */
+:root {
+    --main-bg-color: #1c75bc;
+    --main-text-color: #ffffff;
+}
+
+.variable-example {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    padding: 20px;
+    font-size: 18px;
+}</code></pre>
+        <p>Here's an example HTML using CSS Variables:</p>
         <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -107,18 +120,15 @@
           calculations in your CSS.
         </p>
         <h3>Example: Using calc()</h3>
-        <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;CSS Math Functions Example&lt;/title&gt;
-    &lt;link rel="stylesheet" href="styles.css"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div class="calc-example"&gt;This is a sample div.&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+        <pre><code>/* styles.css */
+.calc-example {
+    width: calc(100% - 40px);
+    padding: 20px;
+    background-color: #1c75bc;
+    color: white;
+    text-align: center;
+}</code></pre>
+
         <h3>Exercise: Use calc() in CSS</h3>
         <p>Try using the calc() function to set the width of an element:</p>
         <pre><code>&lt;!DOCTYPE html&gt;

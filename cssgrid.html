@@ -72,7 +72,28 @@
           Learn the basics of CSS Grid, including grid containers, grid items,
           and grid lines.
         </p>
-        <h3>Example Exercise</h3>
+
+        <h3>Simple Grid Layout</h3>
+        <p>
+          To create a simple grid layout, you can use the following example:
+        </p>
+        <pre><code>/* styles.css */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #333;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: #1c75bc;
+    color: white;
+    border: 1px solid #444;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}</code></pre>
         <p>Start by creating a simple grid layout:</p>
         <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -94,10 +115,31 @@
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
       </section>
+
       <section>
         <h2>CSS Grid Container</h2>
         <p>Discover how to create and style grid containers in CSS Grid.</p>
-        <h3>Example Exercise</h3>
+
+        <h3>Grid Container with Rows and Columns</h3>
+        <p>Create a grid container with specified rows and columns:</p>
+        <pre><code>/* styles.css */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    background-color: #333;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: #1c75bc;
+    color: white;
+    border: 1px solid #444;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}</code></pre>
         <p>Create a grid container with specified rows and columns:</p>
         <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -119,10 +161,40 @@
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
       </section>
+
       <section>
         <h2>CSS Grid Item</h2>
         <p>Explore how to position and style grid items in CSS Grid.</p>
-        <h3>Example Exercise</h3>
+
+        <h3>Position Grid Items</h3>
+        <p>Position grid items within a grid container:</p>
+        <pre><code>/* styles.css */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 100px;
+    gap: 10px;
+    background-color: #333;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: #1c75bc;
+    color: white;
+    border: 1px solid #444;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.item1 {
+    grid-column: 1 / span 2;
+}
+
+.item2 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}</code></pre>
         <p>Position grid items within a grid container:</p>
         <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
