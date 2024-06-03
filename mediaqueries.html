@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UFLIP-CSS: Media Queries and Units via Print CSS</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>CSS: Media Queries and Units via Print CSS</h1>
+  </header>
+  <nav id="nav-bar">
+    <ul>
+      <li>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/UFLIP.png" alt="UFLIP Logo" width="80px" height="15px">
+          </a>
+        </div>
+      </li>
+      <li><a href="inspecttool.html">Using the Inspect Tool</a></li>
+      <li><a href="displayposition.html">Display and Position</a></li>
+      <li><a href="borderscolors.html">Borders and Colors</a></li>
+      <li><a href="typography.html">Typography</a></li>
+      <li><a href="mediaqueries.html" class="active">Media Queries and Units via Print CSS</a></li>
+      <li><a href="grid.html">Grid</a></li>
+      <li><a href="flexbox.html">Flexbox</a></li>
+      <li><a href="pseudoclasses.html">Pseudo Classes</a></li>
+      <li><a href="responsivedesign.html">Responsive Design + Images + Media</a></li>
+      <li><a href="displaymodels.html">Weird Display Models (Lists, Tables, etc)</a></li>
+      <li><a href="extras.html">Extras</a></li> <!-- New tab -->
+    </ul>
+    <footer>
+      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+    </footer>
+  </nav>
+  <main id="main-content">
+    <section>
+      <h2>Media Queries</h2>
+      <p>Media queries allow you to apply CSS rules based on the size of the viewport. This helps in making your website responsive to different screen sizes.</p>
+      <pre><code>/* CSS */
+.media-query-example {
+  background-color: #1c75bc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .media-query-example {
+    background-color: #00cdff;
+  }
+}
+
+@media (max-width: 480px) {
+  .media-query-example {
+    background-color: #febd1d;
+  }
+}</code></pre>
+      <div class="media-query-example">Resize the browser to see the background color change.</div>
+      <p>Inspect the element above and try changing the <code>media queries</code>.</p>
+    </section>
+    <section>
+      <h2>Units via Print CSS</h2>
+      <p>Print CSS allows you to style your content for print media. Units like <code>cm</code>, <code>mm</code>, <code>in</code>, and <code>pt</code> are used for print styling.</p>
+      <pre><code>/* CSS */
+@media print {
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+  .print-example {
+    margin: 2cm;
+    padding: 1cm;
+    border: 1mm solid black;
+  }
+}</code></pre>
+      <div class="print-example">This is styled for print media.</div>
+      <p>Inspect the element above and try changing the <code>units</code> in the print media query.</p>
+    </section>
+  </main>
+</body>
+</html>

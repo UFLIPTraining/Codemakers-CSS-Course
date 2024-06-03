@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UFLIP-CSS: Borders and Colors</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>CSS: Borders and Colors</h1>
+  </header>
+  <nav id="nav-bar">
+    <ul>
+      <li>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/UFLIP.png" alt="UFLIP Logo" width="80px" height="15px">
+          </a>
+        </div>
+      </li>
+      <li><a href="inspecttool.html">Using the Inspect Tool</a></li>
+      <li><a href="displayposition.html">Display and Position</a></li>
+      <li><a href="borderscolors.html" class="active">Borders and Colors</a></li>
+      <li><a href="typography.html">Typography</a></li>
+      <li><a href="mediaqueries.html">Media Queries and Units via Print CSS</a></li>
+      <li><a href="grid.html">Grid</a></li>
+      <li><a href="flexbox.html">Flexbox</a></li>
+      <li><a href="pseudoclasses.html">Pseudo Classes</a></li>
+      <li><a href="responsivedesign.html">Responsive Design + Images + Media</a></li>
+      <li><a href="displaymodels.html">Weird Display Models (Lists, Tables, etc)</a></li>
+      <li><a href="extras.html">Extras</a></li> <!-- New tab -->
+    </ul>
+    <footer>
+      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+    </footer>
+  </nav>
+  
+  </nav>
+  <main id="main-content">
+    <section>
+      <h2>Borders</h2>
+      <p>The <code>border</code> property allows you to specify the style, width, and color of an element's border.</p>
+      <pre><code>/* CSS */
+.border-example {
+  border: 1px solid red;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.border-example-2 {
+  border: 2px dashed green;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.border-example-3 {
+  border: 3px dotted blue;
+  padding: 10px;
+  margin-bottom: 10px;
+}</code></pre>
+      <div class="border-example">1px solid red border</div>
+      <div class="border-example-2">2px dashed green border</div>
+      <div class="border-example-3">3px dotted blue border</div>
+      <p>Inspect the elements above and try changing their <code>border</code> properties.</p>
+    </section>
+    <section>
+      <h2>Colors</h2>
+      <p>The <code>color</code> property sets the color of the text, while the <code>background-color</code> property sets the background color of an element.</p>
+      <pre><code>/* CSS */
+.color-example {
+  color: red;
+  background-color: yellow;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.color-example-2 {
+  color: blue;
+  background-color: lightgrey;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.color-example-3 {
+  color: green;
+  background-color: pink;
+  padding: 10px;
+  margin-bottom: 10px;
+}</code></pre>
+      <div class="color-example">Red text on yellow background</div>
+      <div class="color-example-2">Blue text on lightgrey background</div>
+      <div class="color-example-3">Green text on pink background</div>
+      <p>Inspect the elements above and try changing their <code>color</code> and <code>background-color</code> properties.</p>
+    </section>
+  </main>
+</body>
+</html>

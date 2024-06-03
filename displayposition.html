@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UFLIP-CSS: Display and Position</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>CSS: Display and Position</h1>
+  </header>
+  <nav id="nav-bar">
+    <ul>
+      <li>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/UFLIP.png" alt="UFLIP Logo" width="80px" height="15px">
+          </a>
+        </div>
+      </li>
+      <li><a href="inspecttool.html">Using the Inspect Tool</a></li>
+      <li><a href="displayposition.html" class="active">Display and Position</a></li>
+      <li><a href="borderscolors.html">Borders and Colors</a></li>
+      <li><a href="typography.html">Typography</a></li>
+      <li><a href="mediaqueries.html">Media Queries and Units via Print CSS</a></li>
+      <li><a href="grid.html">Grid</a></li>
+      <li><a href="flexbox.html">Flexbox</a></li>
+      <li><a href="pseudoclasses.html">Pseudo Classes</a></li>
+      <li><a href="responsivedesign.html">Responsive Design + Images + Media</a></li>
+      <li><a href="displaymodels.html">Weird Display Models (Lists, Tables, etc)</a></li>
+      <li><a href="extras.html">Extras</a></li> <!-- New tab -->
+    </ul>
+    <footer>
+      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+    </footer>
+  </nav>
+  <main id="main-content">
+    <section>
+      <h2>Display</h2>
+      <p>The <code>display</code> property determines how an element is displayed. Common values are <code>block</code>, <code>inline</code>, and <code>inline-block</code>.</p>
+      <pre><code>/* CSS */
+.block {
+  display: block;
+  width: 100%;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.inline {
+  display: inline;
+  background-color: lightgreen;
+  padding: 10px;
+}
+
+.inline-block {
+  display: inline-block;
+  background-color: lightcoral;
+  padding: 10px;
+}</code></pre>
+      <div class="block">Block Element</div>
+      <div class="inline">Inline Element</div><div class="inline">Inline Element</div>
+      <div class="inline-block">Inline-Block Element</div><div class="inline-block">Inline-Block Element</div>
+      <p>Inspect the elements above and try changing their <code>display</code> properties.</p>
+    </section>
+    <section>
+      <h2>More Display Examples</h2>
+      <h3>Display: None</h3>
+      <p>Use <code>display: none;</code> to hide an element completely.</p>
+      <pre><code>/* CSS */
+.hidden {
+  display: none;
+}</code></pre>
+      <div class="hidden">This element is hidden.</div>
+      <p>Try adding <code>display: block;</code> to the <code>.hidden</code> class in the inspector to make it visible.</p>
+      <h3>Display: Flex</h3>
+      <p>Use <code>display: flex;</code> to create a flex container.</p>
+      <pre><code>/* CSS */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: lightgray;
+}
+
+.flex-item {
+  background-color: #1c75bc;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+}</code></pre>
+      <div class="flex-container">
+        <div class="flex-item">Flex Item 1</div>
+        <div class="flex-item">Flex Item 2</div>
+        <div class="flex-item">Flex Item 3</div>
+      </div>
+      <p>Inspect the elements above and try changing the <code>justify-content</code> property.</p>
+    </section>
+    <section>
+      <h2>Position</h2>
+      <p>The <code>position</code> property specifies the type of positioning method used for an element. Common values are <code>static</code>, <code>relative</code>, <code>absolute</code>, <code>fixed</code>, and <code>sticky</code>.</p>
+      <pre><code>/* CSS */
+.static-position {
+  position: static;
+}
+
+.relative-position {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.absolute-position {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.fixed-position {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+.sticky-position {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: yellow;
+  padding: 50px;
+  font-size: 20px;
+}</code></pre>
+      <div class="static-position">Static Position</div>
+      <div class="relative-position">Relative Position</div>
+      <div class="absolute-position">Absolute Position</div>
+      <div class="fixed-position">Fixed Position</div>
+      <div class="sticky-position">Sticky Position</div>
+      <p>Inspect the elements above and try changing their <code>position</code> properties.</p>
+    </section>
+    <section>
+      <h2>More Position Examples</h2>
+      <h3>Fixed Footer</h3>
+      <p>A footer that stays fixed at the bottom of the page.</p>
+      <pre><code>/* CSS */
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}</code></pre>
+      <div class="fixed-footer">This is a fixed footer.</div>
+      <p>Inspect the element above and try changing its <code>position</code> property to <code>relative</code> or <code>static</code>.</p>
+      <h3>Absolute Positioned Element</h3>
+      <p>An element positioned absolutely inside a relatively positioned container.</p>
+      <pre><code>/* CSS */
+.relative-container {
+  position: relative;
+  background-color: lightgray;
+  padding: 50px;
+}
+
+.absolute-element {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #1c75bc;
+  color: white;
+  padding: 10px;
+}</code></pre>
+      <div class="relative-container">
+        Relative Container
+        <div class="absolute-element">Absolute Element</div>
+      </div>
+      <p>Inspect the elements above and try changing the <code>top</code> and <code>right</code> properties of the <code>.absolute-element</code>.</p>
+    </section>
+  </main>
+</body>
+</html>

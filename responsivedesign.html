@@ -1,41 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UFLIP-CSS</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="icon" href="img/favicon.png" type="image/png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UFLIP-CSS: Responsive Design + Images + Media</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/favicon.png" type="image/png">
   <script src="js/main.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>Responsive Design</h1>
+    <h1>CSS: Responsive Design + Images + Media</h1>
   </header>
   <nav id="nav-bar">
     <ul>
       <li>
         <div class="logo">
           <a href="index.html">
-            <img src="img/UFLIP.png" alt="UFLIP Logo" width="80px" height="15px" />
+            <img src="img/UFLIP.png" alt="UFLIP Logo" width="80px" height="15px">
           </a>
         </div>
       </li>
-      <li><a href="introduction.html">Introduction and Basics</a></li>
-      <li><a href="colorsandbackgrounds.html">Colors and Backgrounds</a></li>
-      <li><a href="boxmodelandlayout.html">Box Model and Layout</a></li>
-      <li><a href="typographyandtextstyling.html">Typography and Text Styling</a></li>
-      <li><a href="listsandtablesandforms.html">Lists, Tables, and Forms</a></li>
-      <li><a href="positioningandlayout.html">Positioning and Layout</a></li>
-      <li><a href="advancedselectorsandpseudoclasses.html">Advanced Selectors and Pseudo-classes</a></li>
-      <li><a href="advancedeffectsandanimations.html">Advanced Effects and Animations</a></li>
-      <li><a href="navigationanduielements.html">Navigation and UI Elements</a></li>
-      <li><a href="imagesandmedia.html">Images and Media</a></li>
-      <li><a href="responsivedesign.html" class="active">Responsive Design</a></li>
-      <li><a href="cssgrid.html">CSS Grid</a></li>
-      <li><a href="flexboxandlayouttechniques.html">Flexbox and Layout Techniques</a></li>
-      <li><a href="advancedfeaturesandfunctions.html">Advanced Features and Functions</a></li>
-      <li><a href="toolsreferencesandpractices.html">Tools, References, and Practices</a></li>
+      <li><a href="inspecttool.html">Using the Inspect Tool</a></li>
+      <li><a href="displayposition.html">Display and Position</a></li>
+      <li><a href="borderscolors.html">Borders and Colors</a></li>
+      <li><a href="typography.html">Typography</a></li>
+      <li><a href="mediaqueries.html">Media Queries and Units via Print CSS</a></li>
+      <li><a href="grid.html">Grid</a></li>
+      <li><a href="flexbox.html">Flexbox</a></li>
+      <li><a href="pseudoclasses.html">Pseudo Classes</a></li>
+      <li><a href="responsivedesign.html" class="active">Responsive Design + Images + Media</a></li>
+      <li><a href="displaymodels.html">Weird Display Models (Lists, Tables, etc)</a></li>
+      <li><a href="extras.html">Extras</a></li> <!-- New tab -->
     </ul>
     <footer>
       <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
@@ -43,154 +39,85 @@
   </nav>
   <main id="main-content">
     <section>
-      <h2>Responsive Web Design (RWD) Intro</h2>
-      <p>Learn the basics of responsive web design, including the principles and techniques used to create responsive layouts.</p>
+      <h2>Responsive Design</h2>
+      <p>Responsive web design (RWD) ensures that web pages look good on all devices. It is achieved using flexible layouts, flexible images, and CSS media queries.</p>
       <h3>Responsive Layout</h3>
-      <p>To create a simple responsive layout, you can use the following example:</p>
-      <pre><code>/* styles.css */
+      <pre><code>/* CSS */
 .responsive-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .responsive-item {
-    flex: 1 1 100px;
-    background-color: #1c75bc;
-    color: white;
-    padding: 20px;
-    box-sizing: border-box;
+  flex: 1 1 100px;
+  background-color: #1c75bc;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
 }</code></pre>
-      <p>Start by creating a simple responsive layout:</p>
-      <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;RWD Example&lt;/title&gt;
-    &lt;link rel="stylesheet" href="styles.css"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div class="responsive-container"&gt;
-        &lt;div class="responsive-item"&gt;Item 1&lt;/div&gt;
-        &lt;div class="responsive-item"&gt;Item 2&lt;/div&gt;
-        &lt;div class="responsive-item"&gt;Item 3&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+      <div class="responsive-container">
+        <div class="responsive-item">Item 1</div>
+        <div class="responsive-item">Item 2</div>
+        <div class="responsive-item">Item 3</div>
+      </div>
+      <p>Inspect the elements above and try changing their <code>flex</code> properties to see how the layout adapts.</p>
     </section>
     <section>
-      <h2>RWD Viewport</h2>
-      <p>Discover how to use the viewport meta tag and media queries to create responsive designs.</p>
-      <h3>Viewport Meta Tag</h3>
-      <p>The viewport meta tag is essential for responsive design. Here is an example:</p>
-      <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
-      <h3>Media Queries</h3>
-      <p>Media queries allow you to apply CSS rules based on the size of the viewport. For example:</p>
-      <pre><code>/* styles.css */
-.viewport-example {
-    background-color: #1c75bc;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-@media (max-width: 600px) {
-    .viewport-example {
-        background-color: #00cdff;
-    }
+      <h2>Responsive Images</h2>
+      <p>Use the <code>max-width</code> property to make images responsive. This ensures that images scale down as the screen size decreases.</p>
+      <pre><code>/* CSS */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
 }</code></pre>
-      <p>Use the viewport meta tag and media queries to make a layout responsive:</p>
-      <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Viewport and Media Queries&lt;/title&gt;
-    &lt;link rel="stylesheet" href="styles.css"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div class="viewport-example"&gt;
-        Responsive Design Example
-    &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+      <img src="img/responsive-example.jpg" alt="Responsive Example" class="responsive-image">
+      <p>Inspect the image above and try changing its <code>max-width</code> and <code>height</code> properties.</p>
     </section>
     <section>
-      <h2>RWD Grid View</h2>
-      <p>Explore how to create responsive grid layouts using CSS Grid and Flexbox.</p>
-      <h3>CSS Grid</h3>
-      <p>CSS Grid is a powerful tool for creating responsive layouts. Here is an example:</p>
-      <pre><code>/* styles.css */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 20px;
+      <h2>Responsive Videos</h2>
+      <p>To make videos responsive, use a wrapper element with a percentage-based padding to maintain the aspect ratio.</p>
+      <pre><code>/* CSS */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
 }
 
-.grid-item {
-    background-color: #1c75bc;
-    color: white;
-    padding: 20px;
-    text-align: center;
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }</code></pre>
-      <p>Create a responsive grid layout:</p>
-      <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Responsive Grid&lt;/title&gt;
-    &lt;link rel="stylesheet" href="styles.css"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div class="grid-container"&gt;
-        &lt;div class="grid-item"&gt;Grid Item 1&lt;/div&gt;
-        &lt;div class="grid-item"&gt;Grid Item 2&lt;/div&gt;
-        &lt;div class="grid-item"&gt;Grid Item 3&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <p>Inspect the video above and try changing its <code>width</code> and <code>height</code> properties within the wrapper.</p>
     </section>
     <section>
-      <h2>RWD Media Queries</h2>
-      <p>Learn how to use media queries to create responsive designs that adapt to different screen sizes.</p>
-      <h3>Responsive Media Queries</h3>
-      <p>Implement media queries to adapt the layout:</p>
-      <pre><code>/* styles.css */
-.media-query-example {
-    background-color: #1c75bc;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
+      <h2>Responsive Media Queries</h2>
+      <p>Media queries allow you to apply different styles for different screen sizes. This is essential for responsive design.</p>
+      <pre><code>/* CSS */
 @media (max-width: 768px) {
-    .media-query-example {
-        background-color: #00cdff;
-    }
+  .responsive-media-example {
+    background-color: lightblue;
+  }
 }
 
 @media (max-width: 480px) {
-    .media-query-example {
-        background-color: #febd1d;
-    }
+  .responsive-media-example {
+    background-color: lightgreen;
+  }
 }</code></pre>
-      <p>Implement media queries to adapt the layout:</p>
-      <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Responsive Media Queries&lt;/title&gt;
-    &lt;link rel="stylesheet" href="styles.css"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div class="media-query-example"&gt;
-        Media Query Example
-    &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+      <div class="responsive-media-example">Resize the browser to see the background color change.</div>
+      <p>Inspect the element above and try changing the <code>media queries</code>.</p>
     </section>
   </main>
 </body>

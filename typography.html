@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UFLIP-CSS: Typography</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>CSS: Typography</h1>
+  </header>
+  <nav id="nav-bar">
+    <ul>
+      <li>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/UFLIP.png" alt="UFLIP Logo" width="80px" height="15px">
+          </a>
+        </div>
+      </li>
+      <li><a href="inspecttool.html">Using the Inspect Tool</a></li>
+      <li><a href="displayposition.html">Display and Position</a></li>
+      <li><a href="borderscolors.html">Borders and Colors</a></li>
+      <li><a href="typography.html" class="active">Typography</a></li>
+      <li><a href="mediaqueries.html">Media Queries and Units via Print CSS</a></li>
+      <li><a href="grid.html">Grid</a></li>
+      <li><a href="flexbox.html">Flexbox</a></li>
+      <li><a href="pseudoclasses.html">Pseudo Classes</a></li>
+      <li><a href="responsivedesign.html">Responsive Design + Images + Media</a></li>
+      <li><a href="displaymodels.html">Weird Display Models (Lists, Tables, etc)</a></li>
+      <li><a href="extras.html">Extras</a></li> <!-- New tab -->
+    </ul>
+    <footer>
+      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+    </footer>
+  </nav>
+  <main id="main-content">
+    <section>
+      <h2>Typography</h2>
+      <p>Typography involves styling text to make it readable and visually appealing. Key properties include <code>font-family</code>, <code>font-size</code>, <code>font-weight</code>, <code>line-height</code>, and <code>text-align</code>.</p>
+      <h3>Font Properties</h3>
+      <pre><code>/* CSS */
+.typography-example {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+}</code></pre>
+      <div class="typography-example">This is an example of styled text.</div>
+      <p>Inspect the element above and try changing its <code>font-family</code>, <code>font-size</code>, <code>font-weight</code>, <code>line-height</code>, and <code>text-align</code> properties.</p>
+    </section>
+    <section>
+      <h2>Using Google Fonts</h2>
+      <p>You can use custom fonts from Google Fonts by importing them into your CSS. Here is an example:</p>
+      <pre><code>/* Add this at the top of your styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* CSS */
+.google-font-example {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}</code></pre>
+      <div class="google-font-example">This text uses the Roboto font from Google Fonts.</div>
+      <p>Inspect the element above and try changing its <code>font-family</code>, <code>font-size</code>, and <code>font-weight</code> properties.</p>
+    </section>
+    <section>
+      <h2>Text Decoration</h2>
+      <p>The <code>text-decoration</code> property adds decorations to text. Common values include <code>none</code>, <code>underline</code>, <code>overline</code>, and <code>line-through</code>.</p>
+      <pre><code>/* CSS */
+.text-decoration-example {
+  font-size: 18px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.overline {
+  text-decoration: overline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}</code></pre>
+      <div class="text-decoration-example underline">This text is underlined.</div>
+      <div class="text-decoration-example overline">This text has an overline.</div>
+      <div class="text-decoration-example line-through">This text has a line-through.</div>
+      <p>Inspect the elements above and try changing their <code>text-decoration</code> properties.</p>
+    </section>
+    <section>
+      <h2>Text Transform</h2>
+      <p>The <code>text-transform</code> property controls the capitalization of text. Common values include <code>none</code>, <code>capitalize</code>, <code>uppercase</code>, and <code>lowercase</code>.</p>
+      <pre><code>/* CSS */
+.text-transform-example {
+  font-size: 18px;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}</code></pre>
+      <div class="text-transform-example capitalize">this text is capitalized.</div>
+      <div class="text-transform-example uppercase">this text is uppercase.</div>
+      <div class="text-transform-example lowercase">THIS TEXT IS LOWERCASE.</div>
+      <p>Inspect the elements above and try changing their <code>text-transform</code> properties.</p>
+    </section>
+  </main>
+</body>
+</html>

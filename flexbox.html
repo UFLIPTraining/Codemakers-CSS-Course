@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UFLIP-CSS: Flexbox</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>CSS: Flexbox</h1>
+  </header>
+  <nav id="nav-bar">
+    <ul>
+      <li>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/UFLIP.png" alt="UFLIP Logo" width="80px" height="15px">
+          </a>
+        </div>
+      </li>
+      <li><a href="inspecttool.html">Using the Inspect Tool</a></li>
+      <li><a href="displayposition.html">Display and Position</a></li>
+      <li><a href="borderscolors.html">Borders and Colors</a></li>
+      <li><a href="typography.html">Typography</a></li>
+      <li><a href="mediaqueries.html">Media Queries and Units via Print CSS</a></li>
+      <li><a href="grid.html">Grid</a></li>
+      <li><a href="flexbox.html" class="active">Flexbox</a></li>
+      <li><a href="pseudoclasses.html">Pseudo Classes</a></li>
+      <li><a href="responsivedesign.html">Responsive Design + Images + Media</a></li>
+      <li><a href="displaymodels.html">Weird Display Models (Lists, Tables, etc)</a></li>
+      <li><a href="extras.html">Extras</a></li> <!-- New tab -->
+    </ul>
+    <footer>
+      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+    </footer>
+  </nav>
+  <main id="main-content">
+    <section>
+      <h2>CSS Flexbox</h2>
+      <p>Flexbox is a one-dimensional layout system that allows you to create flexible and responsive layouts.</p>
+      <h3>Flexbox Properties</h3>
+      <pre><code>/* CSS */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #232323;
+  height: 200px;
+}
+
+.flex-item {
+  background-color: #1c75bc;
+  color: #fff;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}</code></pre>
+      <div class="flex-container">
+        <div class="flex-item">Flex Item 1</div>
+        <div class="flex-item">Flex Item 2</div>
+        <div class="flex-item">Flex Item 3</div>
+      </div>
+      <p>Inspect the elements above and try changing their <code>flex</code> properties.</p>
+    </section>
+    <section>
+      <h2>More Flexbox Examples</h2>
+      <h3>Justify Content</h3>
+      <p>The <code>justify-content</code> property aligns flex items along the main axis.</p>
+      <pre><code>/* CSS */
+.justify-content-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.justify-content-item {
+  background-color: #1c75bc;
+  color: white;
+  padding: 10px;
+}</code></pre>
+      <div class="justify-content-container">
+        <div class="justify-content-item">Item 1</div>
+        <div class="justify-content-item">Item 2</div>
+        <div class="justify-content-item">Item 3</div>
+      </div>
+      <p>Inspect the container above and try changing the <code>justify-content</code> property to <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, or <code>space-around</code>.</p>
+      <h3>Align Items</h3>
+      <p>The <code>align-items</code> property aligns flex items along the cross axis.</p>
+      <pre><code>/* CSS */
+.align-items-container {
+  display: flex;
+  align-items: flex-start;
+  background-color: lightgray;
+  height: 200px;
+  padding: 10px;
+}
+
+.align-items-item {
+  background-color: #1c75bc;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+}</code></pre>
+      <div class="align-items-container">
+        <div class="align-items-item">Item 1</div>
+        <div class="align-items-item">Item 2</div>
+        <div class="align-items-item">Item 3</div>
+      </div>
+      <p>Inspect the container above and try changing the <code>align-items</code> property to <code>center</code>, <code>flex-end</code>, or <code>stretch</code>.</p>
+      <h3>Flex Direction</h3>
+      <p>The <code>flex-direction</code> property defines the direction of the main axis.</p>
+      <pre><code>/* CSS */
+.flex-direction-container {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.flex-direction-item {
+  background-color: #1c75bc;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+}</code></pre>
+      <div class="flex-direction-container">
+        <div class="flex-direction-item">Item 1</div>
+        <div class="flex-direction-item">Item 2</div>
+        <div class="flex-direction-item">Item 3</div>
+      </div>
+      <p>Inspect the container above and try changing the <code>flex-direction</code> property to <code>row</code> or <code>column-reverse</code>.</p>
+      <h3>Order</h3>
+      <p>The <code>order</code> property controls the order of flex items.</p>
+      <pre><code>/* CSS */
+.order-container {
+  display: flex;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.order-item-1 {
+  background-color: #1c75bc;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  order: 2;
+}
+
+.order-item-2 {
+  background-color: #00cdff;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  order: 1;
+}
+
+.order-item-3 {
+  background-color: #febd1d;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  order: 3;
+}</code></pre>
+      <div class="order-container">
+        <div class="order-item-1">Item 1</div>
+        <div class="order-item-2">Item 2</div>
+        <div class="order-item-3">Item 3</div>
+      </div>
+      <p>Inspect the elements above and try changing their <code>order</code> properties.</p>
+    </section>
+  </main>
+</body>
+</html>

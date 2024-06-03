@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UFLIP-CSS: Pseudo Classes</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>CSS: Pseudo Classes</h1>
+  </header>
+  <nav id="nav-bar">
+    <ul>
+      <li>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/UFLIP.png" alt="UFLIP Logo" width="80px" height="15px">
+          </a>
+        </div>
+      </li>
+      <li><a href="inspecttool.html">Using the Inspect Tool</a></li>
+      <li><a href="displayposition.html">Display and Position</a></li>
+      <li><a href="borderscolors.html">Borders and Colors</a></li>
+      <li><a href="typography.html">Typography</a></li>
+      <li><a href="mediaqueries.html">Media Queries and Units via Print CSS</a></li>
+      <li><a href="grid.html">Grid</a></li>
+      <li><a href="flexbox.html">Flexbox</a></li>
+      <li><a href="pseudoclasses.html" class="active">Pseudo Classes</a></li>
+      <li><a href="responsivedesign.html">Responsive Design + Images + Media</a></li>
+      <li><a href="displaymodels.html">Weird Display Models (Lists, Tables, etc)</a></li>
+      <li><a href="extras.html">Extras</a></li> <!-- New tab -->
+    </ul>
+    <footer>
+      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+    </footer>
+  </nav>
+  <main id="main-content">
+    <section>
+      <h2>Pseudo Classes</h2>
+      <p>Pseudo-classes are keywords added to selectors that specify a special state of the selected elements.</p>
+      <h3>Common Pseudo Classes</h3>
+      <pre><code>/* CSS */
+.pseudo-class-example:hover {
+  color: red;
+}
+
+.pseudo-class-example:focus {
+  background-color: yellow;
+}
+
+.pseudo-class-example:active {
+  font-weight: bold;
+}</code></pre>
+      <div class="pseudo-class-example" tabindex="0">Hover, focus, and click me to see pseudo-class effects.</div>
+      <p>Inspect the element above and try changing the <code>pseudo-classes</code>.</p>
+    </section>
+    <section>
+      <h3>Nth-child Pseudo Class</h3>
+      <p>The <code>:nth-child()</code> pseudo-class matches elements based on their position in a group of siblings.</p>
+      <pre><code>/* CSS */
+.nth-child-example:nth-child(odd) {
+  background-color: #1c75bc;
+  color: white;
+}
+
+.nth-child-example:nth-child(even) {
+  background-color: #00cdff;
+  color: black;
+}</code></pre>
+      <ul>
+        <li class="nth-child-example">Item 1</li>
+        <li class="nth-child-example">Item 2</li>
+        <li class="nth-child-example">Item 3</li>
+        <li class="nth-child-example">Item 4</li>
+        <li class="nth-child-example">Item 5</li>
+      </ul>
+      <p>Inspect the list items above and try changing the <code>:nth-child()</code> pseudo-class.</p>
+    </section>
+    <section>
+      <h3>Not Pseudo Class</h3>
+      <p>The <code>:not()</code> pseudo-class selects elements that do not match a certain selector.</p>
+      <pre><code>/* CSS */
+.not-example:not(.exclude) {
+  background-color: lightcoral;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+}</code></pre>
+      <div class="not-example">Included Item 1</div>
+      <div class="not-example exclude">Excluded Item 2</div>
+      <div class="not-example">Included Item 3</div>
+      <div class="not-example exclude">Excluded Item 4</div>
+      <div class="not-example">Included Item 5</div>
+      <p>Inspect the elements above and try changing the <code>:not()</code> pseudo-class.</p>
+    </section>
+    <section>
+      <h3>First-child and Last-child Pseudo Classes</h3>
+      <p>The <code>:first-child</code> and <code>:last-child</code> pseudo-classes target the first and last child elements within a parent.</p>
+      <pre><code>/* CSS */
+.first-child-example:first-child {
+  background-color: #1c75bc;
+  color: white;
+}
+
+.last-child-example:last-child {
+  background-color: #00cdff;
+  color: black;
+}</code></pre>
+      <ul>
+        <li class="first-child-example">First Child</li>
+        <li class="first-child-example">Middle Child</li>
+        <li class="first-child-example">Last Child</li>
+      </ul>
+      <ul>
+        <li class="last-child-example">First Child</li>
+        <li class="last-child-example">Middle Child</li>
+        <li class="last-child-example">Last Child</li>
+      </ul>
+      <p>Inspect the list items above and try changing the <code>:first-child</code> and <code>:last-child</code> pseudo-classes.</p>
+    </section>
+  </main>
+</body>
+</html>
