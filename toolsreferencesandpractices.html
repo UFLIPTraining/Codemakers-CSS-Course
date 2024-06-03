@@ -1,164 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UFLIP-CSS</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="img/favicon.png" type="image/png" />
-    <script src="js/main.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <h1>Tools, References, and Practices</h1>
-      <!-- <button id="toggle-nav" class="toggle-button">
-        <img
-          id="toggle-img"
-          src="img/triple-left-arrow-direction--512.webp"
-          alt="Toggle Navigation"
-        />
-      </button> -->
-    </header>
-    <nav id="nav-bar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UFLIP-CSS</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="img/favicon.png" type="image/png" />
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Tools, References, and Practices</h1>
+  </header>
+  <nav id="nav-bar">
+    <ul>
+      <li>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/UFLIP.png" alt="UFLIP Logo" width="80px" height="15px" />
+          </a>
+        </div>
+      </li>
+      <li><a href="introduction.html">Introduction and Basics</a></li>
+      <li><a href="colorsandbackgrounds.html">Colors and Backgrounds</a></li>
+      <li><a href="boxmodelandlayout.html">Box Model and Layout</a></li>
+      <li><a href="typographyandtextstyling.html">Typography and Text Styling</a></li>
+      <li><a href="listsandtablesandforms.html">Lists, Tables, and Forms</a></li>
+      <li><a href="positioningandlayout.html">Positioning and Layout</a></li>
+      <li><a href="advancedselectorsandpseudoclasses.html">Advanced Selectors and Pseudo-classes</a></li>
+      <li><a href="advancedeffectsandanimations.html">Advanced Effects and Animations</a></li>
+      <li><a href="navigationanduielements.html">Navigation and UI Elements</a></li>
+      <li><a href="imagesandmedia.html">Images and Media</a></li>
+      <li><a href="responsivedesign.html">Responsive Design</a></li>
+      <li><a href="cssgrid.html">CSS Grid</a></li>
+      <li><a href="flexboxandlayouttechniques.html">Flexbox and Layout Techniques</a></li>
+      <li><a href="advancedfeaturesandfunctions.html">Advanced Features and Functions</a></li>
+      <li><a href="toolsreferencesandpractices.html" class="active">Tools, References, and Practices</a></li>
+    </ul>
+    <footer>
+      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+    </footer>
+  </nav>
+  <main id="main-content">
+    <section>
+      <h2>CSS Tools</h2>
+      <p>Explore various tools that can help you write and manage your CSS, including CSS preprocessors, frameworks, and libraries.</p>
+      <h3>Example: Using a CSS Preprocessor (SASS)</h3>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;CSS Preprocessor Example&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;preprocessor-example&quot;&gt;This is a sample div.&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      <h3>Exercise: Create a SASS File</h3>
+      <p>Try creating and using a SASS file in your project:</p>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;SASS Exercise&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;sass-exercise&quot;&gt;This is a sample div.&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </section>
+    <section>
+      <h2>CSS References</h2>
+      <p>Learn about the different CSS reference materials available to help you understand CSS properties, values, and functions.</p>
+      <h3>Example: CSS Reference Websites</h3>
+      <p>Check out these websites for comprehensive CSS references:</p>
       <ul>
-        <li>
-          <div class="logo">
-            <a href="index.html">
-              <img
-                src="img/UFLIP.png"
-                alt="UFLIP Logo"
-                width="80px"
-                height="15px"
-              />
-            </a>
-          </div>
-        </li>
-        <li><a href="introduction.html">Introduction and Basics</a></li>
-        <li><a href="colorsandbackgrounds.html">Colors and Backgrounds</a></li>
-        <li><a href="boxmodelandlayout.html">Box Model and Layout</a></li>
-        <li><a href="typographyandtextstyling.html">Typography and Text Styling</a></li>
-        <li><a href="listsandtablesandforms.html">Lists, Tables, and Forms</a></li>
-        <li><a href="positioningandlayout.html">Positioning and Layout</a></li>
-        <li><a href="advancedselectorsandpseudoclasses.html" >Advanced Selectors and Pseudo-classes</a></li>
-        <li><a href="advancedeffectsandanimations.html">Advanced Effects and Animations</a></li>
-        <li><a href="navigationanduielements.html">Navigation and UI Elements</a></li>
-        <li><a href="imagesandmedia.html">Images and Media</a></li>
-        <li><a href="responsivedesign.html">Responsive Design</a></li>
-        <li><a href="cssgrid.html">CSS Grid</a></li>
-        <li><a href="flexboxandlayouttechniques.html">Flexbox and Layout Techniques</a></li>
-        <li><a href="advancedfeaturesandfunctions.html">Advanced Features and Functions</a></li>
-        <li><a href="toolsreferencesandpractices.html" class="active">Tools, References, and Practices</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs</a></li>
+        <li><a href="https://www.css-tricks.com" target="_blank">CSS-Tricks</a></li>
+        <li><a href="https://www.w3schools.com/css/" target="_blank">W3Schools</a></li>
       </ul>
-      <footer>
-        <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
-      </footer>
-    </nav>
-    <main>
-      <section>
-        <h2>CSS Tools</h2>
-        <p>
-          Explore various tools that can help you write and manage your CSS,
-          including CSS preprocessors, frameworks, and libraries.
-        </p>
-        <h3>Example: Using a CSS Preprocessor (SASS)</h3>
-        <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;CSS Preprocessor Example&lt;/title&gt;
-    &lt;link rel="stylesheet" href="styles.css"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div class="preprocessor-example"&gt;This is a sample div.&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-        <h3>Exercise: Create a SASS File</h3>
-        <p>Try creating and using a SASS file in your project:</p>
-        <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;SASS Exercise&lt;/title&gt;
-    &lt;link rel="stylesheet" href="styles.css"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div class="sass-exercise"&gt;This is a sample div.&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-      </section>
-      <section>
-        <h2>CSS References</h2>
-        <p>
-          Learn about the different CSS reference materials available to help
-          you understand CSS properties, values, and functions.
-        </p>
-        <h3>Example: CSS Reference Websites</h3>
-        <p>Check out these websites for comprehensive CSS references:</p>
-        <ul>
-          <li>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-              target="_blank"
-              >MDN Web Docs</a
-            >
-          </li>
-          <li>
-            <a href="https://www.css-tricks.com" target="_blank">CSS-Tricks</a>
-          </li>
-          <li>
-            <a href="https://www.w3schools.com/css/" target="_blank"
-              >W3Schools</a
-            >
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2>CSS Best Practices</h2>
-        <p>
-          Discover best practices for writing maintainable and scalable CSS,
-          including tips on organizing your CSS and avoiding common pitfalls.
-        </p>
-        <h3>Example: Organizing Your CSS</h3>
-        <pre><code>/* Base Styles */
+    </section>
+    <section>
+      <h2>CSS Best Practices</h2>
+      <p>Discover best practices for writing maintainable and scalable CSS, including tips on organizing your CSS and avoiding common pitfalls.</p>
+      <h3>Example: Organizing Your CSS</h3>
+      <pre><code>/* Base Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Layout Styles */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* Component Styles */
 .button {
-    background-color: #1c75bc;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+  background-color: #1c75bc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
 }</code></pre>
-        <h3>Exercise: Organize Your CSS</h3>
-        <p>Try organizing your CSS into base, layout, and component styles:</p>
-        <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
+      <h3>Exercise: Organize Your CSS</h3>
+      <p>Try organizing your CSS into base, layout, and component styles:</p>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;CSS Organization Exercise&lt;/title&gt;
-    &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;CSS Organization Exercise&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;div class="organization-exercise"&gt;This is a sample div.&lt;/div&gt;
-    &lt;button class="button"&gt;Click Me&lt;/button&gt;
+  &lt;div class=&quot;organization-exercise&quot;&gt;This is a sample div.&lt;/div&gt;
+  &lt;button class=&quot;button&quot;&gt;Click Me&lt;/button&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-      </section>
-    </main>
-  </body>
+    </section>
+  </main>
+</body>
 </html>

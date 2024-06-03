@@ -1,21 +1,5 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//   const toggleNavButton = document.getElementById("toggle-nav");
-//   const toggleImg = document.getElementById("toggle-img");
-//   const navBar = document.getElementById("nav-bar");
-
-//   toggleNavButton.addEventListener("click", function () {
-//     if (navBar.style.transform === "translateX(-220px)") {
-//       navBar.style.transform = "translateX(0)";
-//       toggleImg.classList.remove("rotated");
-//     } else {
-//       navBar.style.transform = "translateX(-220px)";
-//       toggleImg.classList.add("rotated");
-//     }
-//   });
-// });
-
 document.addEventListener('DOMContentLoaded', function () {
-  const navLinks = document.querySelectorAll('.nav-link');
+  const navLinks = document.querySelectorAll('nav ul li a');
 
   navLinks.forEach(link => {
     link.addEventListener('click', function (event) {
@@ -24,8 +8,10 @@ document.addEventListener('DOMContentLoaded', function () {
       fetch(href)
         .then(response => response.text())
         .then(html => {
-          document.getElementById('main-content').innerHTML = new DOMParser().parseFromString(html, 'text/html').getElementById('main-content').innerHTML;
+          document.querySelector('main').innerHTML = new DOMParser().parseFromString(html, 'text/html').querySelector('main').innerHTML;
           window.history.pushState({ path: href }, '', href);
+          document.querySelectorAll('nav ul li a').forEach(link => link.classList.remove('active'));
+          this.classList.add('active');
         });
     });
   });
