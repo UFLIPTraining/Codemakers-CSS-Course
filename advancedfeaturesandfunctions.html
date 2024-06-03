@@ -6,66 +6,47 @@
     <title>UFLIP-CSS</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="img/favicon.png" type="image/png" />
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <header>
       <h1>Advanced Features and Functions</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="introduction.html">Introduction and Basics</a></li>
-          <li>
-            <a href="colorsandbackgrounds.html">Colors and Backgrounds</a>
-          </li>
-          <li><a href="boxmodelandlayout.html">Box Model and Layout</a></li>
-          <li>
-            <a href="typographyandtextstyling.html"
-              >Typography and Text Styling</a
-            >
-          </li>
-          <li>
-            <a href="listsandtablesandforms.html">Lists, Tables, and Forms</a>
-          </li>
-          <li>
-            <a href="positioningandlayout.html">Positioning and Layout</a>
-          </li>
-          <li>
-            <a href="advancedselectorsandpseudoclasses.html"
-              >Advanced Selectors and Pseudo-classes</a
-            >
-          </li>
-          <li>
-            <a href="advancedeffectsandanimations.html"
-              >Advanced Effects and Animations</a
-            >
-          </li>
-          <li>
-            <a href="navigationanduielements.html"
-              >Navigation and UI Elements</a
-            >
-          </li>
-          <li><a href="imagesandmedia.html">Images and Media</a></li>
-          <li><a href="responsivedesign.html">Responsive Design</a></li>
-          <li><a href="cssgrid.html">CSS Grid</a></li>
-          <li>
-            <a href="flexboxandlayouttechniques.html"
-              >Flexbox and Layout Techniques</a
-            >
-          </li>
-          <li>
-            <a href="advancedfeaturesandfunctions.html" class="active"
-              >Advanced Features and Functions</a
-            >
-          </li>
-          <li>
-            <a href="toolsreferencesandpractices.html"
-              >Tools, References, and Practices</a
-            >
-          </li>
-        </ul>
-      </nav>
     </header>
-    <main>
+    <nav id="nav-bar">
+      <ul>
+        <li>
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="img/UFLIP.png"
+                alt="UFLIP Logo"
+                width="80px"
+                height="15px"
+              />
+            </a>
+          </div>
+        </li>
+        <li><a href="introduction.html" class="nav-link">Introduction and Basics</a></li>
+        <li><a href="colorsandbackgrounds.html" class="nav-link">Colors and Backgrounds</a></li>
+        <li><a href="boxmodelandlayout.html" class="nav-link">Box Model and Layout</a></li>
+        <li><a href="typographyandtextstyling.html" class="nav-link">Typography and Text Styling</a></li>
+        <li><a href="listsandtablesandforms.html" class="nav-link">Lists, Tables, and Forms</a></li>
+        <li><a href="positioningandlayout.html" class="nav-link">Positioning and Layout</a></li>
+        <li><a href="advancedselectorsandpseudoclasses.html" class="nav-link">Advanced Selectors and Pseudo-classes</a></li>
+        <li><a href="advancedeffectsandanimations.html" class="nav-link">Advanced Effects and Animations</a></li>
+        <li><a href="navigationanduielements.html" class="nav-link">Navigation and UI Elements</a></li>
+        <li><a href="imagesandmedia.html" class="nav-link">Images and Media</a></li>
+        <li><a href="responsivedesign.html" class="nav-link">Responsive Design</a></li>
+        <li><a href="cssgrid.html" class="nav-link">CSS Grid</a></li>
+        <li><a href="flexboxandlayouttechniques.html" class="nav-link">Flexbox and Layout Techniques</a></li>
+        <li><a href="advancedfeaturesandfunctions.html" class="nav-link active">Advanced Features and Functions</a></li>
+        <li><a href="toolsreferencesandpractices.html" class="nav-link">Tools, References, and Practices</a></li>
+      </ul>
+      <footer>
+        <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+      </footer>
+    </nav>
+    <main id="main-content">
       <section>
         <h2>CSS Variables</h2>
         <p>
@@ -145,8 +126,28 @@
 &lt;/html&gt;</code></pre>
       </section>
     </main>
-    <footer>
-      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
-    </footer>
   </body>
 </html>
+```
+
+### JavaScript (`main.js`)
+
+Ensure your JavaScript (`main.js`) to handle the navigation links without scrolling back to the top remains the same:
+
+```javascript
+document.addEventListener('DOMContentLoaded', function () {
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function (event) {
+      event.preventDefault();
+      const href = this.getAttribute('href');
+      fetch(href)
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('main-content').innerHTML = new DOMParser().parseFromString(html, 'text/html').getElementById('main-content').innerHTML;
+          window.history.pushState({ path: href }, '', href);
+        });
+    });
+  });
+});
