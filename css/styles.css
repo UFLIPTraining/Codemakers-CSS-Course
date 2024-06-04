@@ -1,3 +1,4 @@
+/* Existing CSS */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -15,11 +16,6 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2em;
-}
-
 nav {
   position: fixed;
   top: 0;
@@ -27,7 +23,7 @@ nav {
   height: 100%;
   width: 200px;
   background: #232323;
-  padding-top: 0;
+  padding-top: 20px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   overflow-y: auto;
@@ -44,7 +40,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 3.75px;
+  margin: 5px 0;
 }
 
 nav ul li a {
@@ -99,7 +95,32 @@ footer p {
   font-size: 0.9em;
 }
 
-.pagination {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 50
+/* Dropdown CSS */
+.extras-dropdown {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-content li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px;
+  border-bottom: 1px solid #444;
+  background: #333;
+}
+
+.dropdown-content li a:hover {
+  background: #1c75bc;
+}
+
+/* Show the dropdown menu on hover */
+nav ul li:hover .dropdown-content {
+  display: block;
+}

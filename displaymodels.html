@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UFLIP-CSS: Weird Display Models</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>CSS: Weird Display Models (Lists, Tables, etc)</h1>
+  </header>
+  <nav id="nav-bar">
+    <ul>
+      <li>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/UFLIP.png" alt="UFLIP Logo" width="80px" height="15px">
+          </a>
+        </div>
+      </li>
+      <li><a href="inspecttool.html">Using the Inspect Tool</a></li>
+      <li><a href="displayposition.html">Display and Position</a></li>
+      <li><a href="borderscolors.html">Borders and Colors</a></li>
+      <li><a href="typography.html">Typography</a></li>
+      <li><a href="mediaqueries.html">Media Queries and Units via Print CSS</a></li>
+      <li><a href="grid.html">Grid</a></li>
+      <li><a href="flexbox.html">Flexbox</a></li>
+      <li><a href="pseudoclasses.html">Pseudo Classes</a></li>
+      <li><a href="responsivedesign.html">Responsive Design + Images + Media</a></li>
+      <li><a href="displaymodels.html">Weird Display Models (Lists, Tables, etc)</a></li>
+      <li><a href="extras.html">Extras</a></li> <!-- New tab -->
+    </ul>
+    <footer>
+      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+    </footer>
+  </nav>
+  <main id="main-content">
+    <section>
+      <h2>Lists</h2>
+      <p>CSS provides various properties to style lists, including <code>list-style-type</code>, <code>list-style-position</code>, and <code>list-style-image</code>.</p>
+      <pre><code>/* CSS */
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+  list-style-image: url('img/bullet.png');
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: outside;
+}</code></pre>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+      <ol>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+      </ol>
+      <p>Inspect the lists above and try changing their <code>list-style</code> properties.</p>
+    </section>
+    <section>
+      <h2>Tables</h2>
+      <p>CSS allows you to style tables using properties like <code>border</code>, <code>border-collapse</code>, <code>padding</code>, and <code>text-align</code>.</p>
+      <pre><code>/* CSS */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}</code></pre>
+      <table>
+        <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+          <th>Header 3</th>
+        </tr>
+        <tr>
+          <td>Data 1</td>
+          <td>Data 2</td>
+          <td>Data 3</td>
+        </tr>
+        <tr>
+          <td>Data 4</td>
+          <td>Data 5</td>
+          <td>Data 6</td>
+        </tr>
+      </table>
+      <p>Inspect the table above and try changing its <code>border</code>, <code>padding</code>, and <code>text-align</code> properties.</p>
+    </section>
+  </main>
+</body>
+</html>

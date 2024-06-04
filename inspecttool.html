@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UFLIP-CSS: Using the Inspect Tool</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Using the Inspect Tool</h1>
+  </header>
+  <nav id="nav-bar">
+    <ul>
+      <li>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/UFLIP.png" alt="UFLIP Logo" width="80px" height="15px">
+          </a>
+        </div>
+      </li>
+      <li><a href="inspecttool.html" class="active">Using the Inspect Tool</a></li>
+      <li><a href="displayposition.html">Display and Position</a></li>
+      <li><a href="borderscolors.html">Borders and Colors</a></li>
+      <li><a href="typography.html">Typography</a></li>
+      <li><a href="mediaqueries.html">Media Queries and Units via Print CSS</a></li>
+      <li><a href="grid.html">Grid</a></li>
+      <li><a href="flexbox.html">Flexbox</a></li>
+      <li><a href="pseudoclasses.html">Pseudo Classes</a></li>
+      <li><a href="responsivedesign.html">Responsive Design + Images + Media</a></li>
+      <li><a href="displaymodels.html">Weird Display Models (Lists, Tables, etc)</a></li>
+      <li><a href="extras.html">Extras</a></li> <!-- New tab -->
+    </ul>
+    <footer>
+      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+    </footer>
+  </nav>
+  <main id="main-content">
+    <section>
+      <h2>Using the Inspect Tool</h2>
+      <p>The browser's inspect tool is a powerful feature that allows you to see and edit HTML and CSS on the fly. This is incredibly useful for testing changes and debugging your code.</p>
+      <h3>How to Use the Inspect Tool</h3>
+      <p>Right-click on any element on the page and select "Inspect" to open the developer tools. Here, you can see the HTML and CSS that make up the page.</p>
+      <div class="example" style="border: 1px solid red; padding: 10px;">
+        <p>Inspect this element and try changing the border color and padding in the styles pane.</p>
+      </div>
+      <pre><code>div.example {
+  border: 1px solid red;
+  padding: 10px;
+}</code></pre>
+      <p>Try changing the border to <code>border: 1px solid blue;</code> and the padding to <code>padding: 20px;</code>.</p>
+    </section>
+    <section>
+      <h2>Example 1: Changing Background Color</h2>
+      <div class="example-bg" style="background-color: lightgray; padding: 10px;">
+        <p>Inspect this element and change the background color.</p>
+      </div>
+      <pre><code>div.example-bg {
+  background-color: lightgray;
+  padding: 10px;
+}</code></pre>
+      <p>Try changing the background color to <code>background-color: yellow;</code>.</p>
+    </section>
+    <section>
+      <h2>Example 2: Modifying Font Size</h2>
+      <div class="example-font" style="font-size: 16px;">
+        <p>Inspect this element and change the font size.</p>
+      </div>
+      <pre><code>div.example-font {
+  font-size: 16px;
+}</code></pre>
+      <p>Try changing the font size to <code>font-size: 24px;</code>.</p>
+    </section>
+    <section>
+      <h2>Example 3: Adjusting Margin</h2>
+      <div class="example-margin" style="margin: 20px; background-color: #1c75bc; color: white;">
+        <p>Inspect this element and change the margin.</p>
+      </div>
+      <pre><code>div.example-margin {
+  margin: 20px;
+  background-color: #1c75bc;
+  color: white;
+}</code></pre>
+      <p>Try changing the margin to <code>margin: 40px;</code>.</p>
+    </section>
+    <section>
+      <h2>Example 4: Adding Box Shadow</h2>
+      <div class="example-shadow" style="padding: 10px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);">
+        <p>Inspect this element and change the box shadow.</p>
+      </div>
+      <pre><code>div.example-shadow {
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}</code></pre>
+      <p>Try changing the box shadow to <code>box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);</code>.</p>
+    </section>
+    <section>
+      <h2>Example 5: Changing Font Style</h2>
+      <div class="example-font-style" style="font-style: normal;">
+        <p>Inspect this element and change the font style.</p>
+      </div>
+      <pre><code>div.example-font-style {
+  font-style: normal;
+}</code></pre>
+      <p>Try changing the font style to <code>font-style: italic;</code>.</p>
+    </section>
+    <section>
+      <h2>Example 6: Adding Border Radius</h2>
+      <div class="example-radius" style="border: 1px solid #1c75bc; padding: 10px; border-radius: 0;">
+        <p>Inspect this element and change the border radius.</p>
+      </div>
+      <pre><code>div.example-radius {
+  border: 1px solid #1c75bc;
+  padding: 10px;
+  border-radius: 0;
+}</code></pre>
+      <p>Try changing the border radius to <code>border-radius: 10px;</code>.</p>
+    </section>
+    <section>
+      <h2>Example 7: Adjusting Line Height</h2>
+      <div class="example-line-height" style="line-height: 1.2;">
+        <p>Inspect this element and change the line height.</p>
+      </div>
+      <pre><code>div.example-line-height {
+  line-height: 1.2;
+}</code></pre>
+      <p>Try changing the line height to <code>line-height: 2;</code>.</p>
+    </section>
+  </main>
+</body>
+</html>

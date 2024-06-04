@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UFLIP-CSS: Grid</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>CSS: Grid</h1>
+  </header>
+  <nav id="nav-bar">
+    <ul>
+      <li>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/UFLIP.png" alt="UFLIP Logo" width="80px" height="15px">
+          </a>
+        </div>
+      </li>
+      <li><a href="inspecttool.html">Using the Inspect Tool</a></li>
+      <li><a href="displayposition.html">Display and Position</a></li>
+      <li><a href="borderscolors.html">Borders and Colors</a></li>
+      <li><a href="typography.html">Typography</a></li>
+      <li><a href="mediaqueries.html">Media Queries and Units via Print CSS</a></li>
+      <li><a href="grid.html" class="active">Grid</a></li>
+      <li><a href="flexbox.html">Flexbox</a></li>
+      <li><a href="pseudoclasses.html">Pseudo Classes</a></li>
+      <li><a href="responsivedesign.html">Responsive Design + Images + Media</a></li>
+      <li><a href="displaymodels.html">Weird Display Models (Lists, Tables, etc)</a></li>
+      <li><a href="extras.html">Extras</a></li> <!-- New tab -->
+    </ul>
+    <footer>
+      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+    </footer>
+  </nav>
+  <main id="main-content">
+    <section>
+      <h2>CSS Grid</h2>
+      <p>CSS Grid is a two-dimensional layout system that allows you to create complex and responsive layouts.</p>
+      <h3>Grid Properties</h3>
+      <pre><code>/* CSS */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  background-color: #232323;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: #1c75bc;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}</code></pre>
+      <div class="grid-container">
+        <div class="grid-item">Grid Item 1</div>
+        <div class="grid-item">Grid Item 2</div>
+        <div class="grid-item">Grid Item 3</div>
+        <div class="grid-item">Grid Item 4</div>
+        <div class="grid-item">Grid Item 5</div>
+        <div class="grid-item">Grid Item 6</div>
+      </div>
+      <p>Inspect the elements above and try changing their <code>grid-template-columns</code> and other grid properties.</p>
+    </section>
+    <section>
+      <h2>More Grid Examples</h2>
+      <h3>Grid Template Rows</h3>
+      <p>The <code>grid-template-rows</code> property defines the rows of the grid.</p>
+      <pre><code>/* CSS */
+.grid-rows-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 200px;
+  gap: 10px;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.grid-rows-item {
+  background-color: #1c75bc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}</code></pre>
+      <div class="grid-rows-container">
+        <div class="grid-rows-item">Item 1</div>
+        <div class="grid-rows-item">Item 2</div>
+        <div class="grid-rows-item">Item 3</div>
+        <div class="grid-rows-item">Item 4</div>
+      </div>
+      <p>Inspect the container above and try changing the <code>grid-template-rows</code> property.</p>
+      <h3>Grid Area</h3>
+      <p>The <code>grid-area</code> property defines a grid item’s position within the grid by specifying the start and end lines for both rows and columns.</p>
+      <pre><code>/* CSS */
+.grid-area-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  gap: 10px;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.grid-area-item {
+  background-color: #1c75bc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.item1 {
+  grid-area: 1 / 1 / 2 / 3; /* row-start / column-start / row-end / column-end */
+}
+
+.item2 {
+  grid-area: 1 / 3 / 3 / 4;
+}
+
+.item3 {
+  grid-area: 2 / 1 / 3 / 3;
+}</code></pre>
+      <div class="grid-area-container">
+        <div class="grid-area-item item1">Item 1</div>
+        <div class="grid-area-item item2">Item 2</div>
+        <div class="grid-area-item item3">Item 3</div>
+      </div>
+      <p>Inspect the items above and try changing their <code>grid-area</code> properties.</p>
+      <h3>Grid Gap</h3>
+      <p>The <code>gap</code> property sets the gaps (gutters) between rows and columns.</p>
+      <pre><code>/* CSS */
+.grid-gap-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.grid-gap-item {
+  background-color: #1c75bc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}</code></pre>
+      <div class="grid-gap-container">
+        <div class="grid-gap-item">Item 1</div>
+        <div class="grid-gap-item">Item 2</div>
+        <div class="grid-gap-item">Item 3</div>
+        <div class="grid-gap-item">Item 4</div>
+        <div class="grid-gap-item">Item 5</div>
+        <div class="grid-gap-item">Item 6</div>
+      </div>
+      <p>Inspect the container above and try changing the <code>gap</code> property.</p>
+    </section>
+  </main>
+</body>
+</html>
