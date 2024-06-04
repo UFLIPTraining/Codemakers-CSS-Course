@@ -16,3 +16,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const extrasDropdown = document.querySelector('.extras-dropdown');
+  const dropdownContent = document.querySelector('.dropdown-content');
+
+  extrasDropdown.addEventListener('click', function () {
+    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+  });
+});
