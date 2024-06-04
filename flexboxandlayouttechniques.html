@@ -3,69 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flexbox and Layout Techniques</title>
-    <link rel="stylesheet" href="/src/css/styles.css" />
-    <script src="/src/js/main.js" defer></script>
+    <title>UFLIP-CSS</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <header>
       <h1>Flexbox and Layout Techniques</h1>
-      <nav>
+    </header>
+      <nav id="nav-bar">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li>
+            <div class="logo">
+              <a href="index.html">
+                <img
+                  src="img/UFLIP.png"
+                  alt="UFLIP Logo"
+                  width="80px"
+                  height="15px"
+                />
+              </a>
+            </div>
+          </li>
           <li><a href="introduction.html">Introduction and Basics</a></li>
-          <li>
-            <a href="colorsandbackgrounds.html">Colors and Backgrounds</a>
-          </li>
+          <li><a href="colorsandbackgrounds.html">Colors and Backgrounds</a></li>
           <li><a href="boxmodelandlayout.html">Box Model and Layout</a></li>
-          <li>
-            <a href="typographyandtextstyling.html"
-              >Typography and Text Styling</a
-            >
-          </li>
-          <li>
-            <a href="listsandtablesandforms.html">Lists, Tables, and Forms</a>
-          </li>
-          <li>
-            <a href="positioningandlayout.html">Positioning and Layout</a>
-          </li>
-          <li>
-            <a href="advancedselectorsandpseudoclasses.html"
-              >Advanced Selectors and Pseudo-classes</a
-            >
-          </li>
-          <li>
-            <a href="advancedeffectsandanimations.html"
-              >Advanced Effects and Animations</a
-            >
-          </li>
-          <li>
-            <a href="navigationanduielements.html"
-              >Navigation and UI Elements</a
-            >
-          </li>
+          <li><a href="typographyandtextstyling.html ">Typography and Text Styling</a></li>
+          <li><a href="listsandtablesandforms.html">Lists, Tables, and Forms</a></li>
+          <li><a href="positioningandlayout.html">Positioning and Layout</a></li>
+          <li><a href="advancedselectorsandpseudoclasses.html" >Advanced Selectors and Pseudo-classes</a></li>
+          <li><a href="advancedeffectsandanimations.html">Advanced Effects and Animations</a></li>
+          <li><a href="navigationanduielements.html">Navigation and UI Elements</a></li>
           <li><a href="imagesandmedia.html">Images and Media</a></li>
           <li><a href="responsivedesign.html">Responsive Design</a></li>
           <li><a href="cssgrid.html">CSS Grid</a></li>
-          <li>
-            <a href="flexboxandlayouttechniques.html" class="active"
-              >Flexbox and Layout Techniques</a
-            >
-          </li>
-          <li>
-            <a href="advancedfeaturesandfunctions.html"
-              >Advanced Features and Functions</a
-            >
-          </li>
-          <li>
-            <a href="toolsreferencesandpractices.html"
-              >Tools, References, and Practices</a
-            >
-          </li>
+          <li><a href="flexboxandlayouttechniques.html"class="active">Flexbox and Layout Techniques</a></li>
+          <li><a href="advancedfeaturesandfunctions.html">Advanced Features and Functions</a></li>
+          <li><a href="toolsreferencesandpractices.html">Tools, References, and Practices</a></li>
         </ul>
+        <footer>
+          <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+        </footer>
       </nav>
     </header>
-    <main>
+    <main id="main-content">
       <section>
         <h2>CSS Flexbox</h2>
         <p>
@@ -73,7 +55,23 @@
           layouts. Flexbox is a layout model that allows you to design complex
           layout structures with ease.
         </p>
-        <h3>Example: Basic Flexbox Layout</h3>
+
+        <h3>Basic Flexbox Layout</h3>
+        <p>Here's a basic example of using Flexbox:</p>
+        <pre><code>/* styles.css */
+.flex-container {
+    display: flex;
+    background-color: #333;
+}
+
+.flex-item {
+    background-color: #1c75bc;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}</code></pre>
         <p>Here's a basic example of using Flexbox:</p>
         <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -91,6 +89,7 @@
     &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
+
         <h3>Exercise: Create a Flexbox Layout</h3>
         <p>Try creating a Flexbox layout with different flex properties:</p>
         <pre><code>&lt;!DOCTYPE html&gt;
@@ -110,6 +109,7 @@
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
       </section>
+
       <section>
         <h2>CSS Grid</h2>
         <p>
@@ -117,7 +117,26 @@
           and responsive grid layouts. CSS Grid is a powerful layout system that
           allows you to create two-dimensional layouts.
         </p>
-        <h3>Example: Basic Grid Layout</h3>
+
+        <h3>Basic Grid Layout</h3>
+        <p>Here's a basic example of using CSS Grid:</p>
+        <pre><code>/* styles.css */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #333;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: #1c75bc;
+    color: white;
+    border: 1px solid #444;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}</code></pre>
         <p>Here's a basic example of using CSS Grid:</p>
         <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -138,6 +157,7 @@
     &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
+
         <h3>Exercise: Create a Grid Layout</h3>
         <p>Try creating a Grid layout with different grid properties:</p>
         <pre><code>&lt;!DOCTYPE html&gt;
@@ -161,8 +181,5 @@
 &lt;/html&gt;</code></pre>
       </section>
     </main>
-    <footer>
-      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
-    </footer>
   </body>
 </html>

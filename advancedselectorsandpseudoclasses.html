@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UFLIP-CSS</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Advanced Selectors and Pseudo-classes</h1>
+    </header>
+    <nav id="nav-bar">
+      <ul>
+        <li>
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="img/UFLIP.png"
+                alt="UFLIP Logo"
+                width="80px"
+                height="15px"
+              />
+            </a>
+          </div>
+        </li>
+        <li><a href="introduction.html">Introduction and Basics</a></li>
+        <li><a href="colorsandbackgrounds.html">Colors and Backgrounds</a></li>
+        <li><a href="boxmodelandlayout.html">Box Model and Layout</a></li>
+        <li><a href="typographyandtextstyling.html ">Typography and Text Styling</a></li>
+        <li><a href="listsandtablesandforms.html">Lists, Tables, and Forms</a></li>
+        <li><a href="positioningandlayout.html">Positioning and Layout</a></li>
+        <li><a href="advancedselectorsandpseudoclasses.html" class="active">Advanced Selectors and Pseudo-classes</a></li>
+        <li><a href="advancedeffectsandanimations.html">Advanced Effects and Animations</a></li>
+        <li><a href="navigationanduielements.html">Navigation and UI Elements</a></li>
+        <li><a href="imagesandmedia.html">Images and Media</a></li>
+        <li><a href="responsivedesign.html">Responsive Design</a></li>
+        <li><a href="cssgrid.html">CSS Grid</a></li>
+        <li><a href="flexboxandlayouttechniques.html">Flexbox and Layout Techniques</a></li>
+        <li><a href="advancedfeaturesandfunctions.html">Advanced Features and Functions</a></li>
+        <li><a href="toolsreferencesandpractices.html">Tools, References, and Practices</a></li>
+      </ul>
+      <footer>
+        <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+      </footer>
+    </nav>
+    <main id="main-content">
+      <section>
+        <h2>CSS Advanced Selectors</h2>
+        <p>
+          Explore the different advanced selectors in CSS, including attribute
+          selectors, combinators, and more.
+        </p>
+
+        <h3>Attribute Selectors</h3>
+        <p>
+          Attribute selectors allow you to select elements based on their
+          attributes or attribute values. For example:
+        </p>
+        <pre><code>input[type="text"] {
+    border: 2px solid blue;
+}</code></pre>
+        <p>This will style all input elements with the type "text".</p>
+
+        <h3>Combinators</h3>
+        <p>
+          Combinators are used to combine multiple selectors in various ways.
+          For example:
+        </p>
+        <pre><code>.parent > .child {
+    background-color: lightgray;
+}</code></pre>
+        <p>
+          This will style all elements with the class "child" that are direct
+          children of elements with the class "parent".
+        </p>
+
+        <h3>Example Exercise</h3>
+        <p>Try using advanced selectors:</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Advanced Selectors Exercise&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="example"&gt;
+        &lt;input type="text" placeholder="Attribute Selector" /&gt;
+        &lt;div class="parent"&gt;
+            &lt;div class="child"&gt;Child 1&lt;/div&gt;
+            &lt;div class="child"&gt;Child 2&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </section>
+
+      <section>
+        <h2>CSS Pseudo-classes</h2>
+        <p>
+          Learn how to use pseudo-classes in CSS to style elements based on
+          their state or position in the DOM.
+        </p>
+
+        <h3>:hover</h3>
+        <p>
+          The <code>:hover</code> pseudo-class is used to select elements when
+          the user hovers over them. For example:
+        </p>
+        <pre><code>a:hover {
+    color: red;
+}</code></pre>
+        <p>
+          This will change the color of a link to red when the user hovers over
+          it.
+        </p>
+
+        <h3>:nth-child</h3>
+        <p>
+          The <code>:nth-child()</code> pseudo-class matches elements based on
+          their position in a group of siblings. For example:
+        </p>
+        <pre><code>li:nth-child(even) {
+    background-color: #f4f4f4;
+}</code></pre>
+        <p>
+          This will style every even-numbered list item with a light gray
+          background.
+        </p>
+
+        <h3>Example Exercise</h3>
+        <p>Try using pseudo-classes:</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Pseudo-classes Exercise&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;ul class="pseudo-class-example"&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+        &lt;li&gt;Item 3&lt;/li&gt;
+        &lt;li&gt;Item 4&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </section>
+
+      <section>
+        <h2>CSS Pseudo-elements</h2>
+        <p>
+          Discover how to use pseudo-elements in CSS to style parts of elements,
+          such as the first line or first letter.
+        </p>
+
+        <h3>::first-line</h3>
+        <p>
+          The <code>::first-line</code> pseudo-element is used to apply styles
+          to the first line of a block-level element. For example:
+        </p>
+        <pre><code>p::first-line {
+    font-weight: bold;
+}</code></pre>
+        <p>This will make the first line of a paragraph bold.</p>
+
+        <h3>::before and ::after</h3>
+        <p>
+          The <code>::before</code> and <code>::after</code> pseudo-elements are
+          used to insert content before or after an element's content. For
+          example:
+        </p>
+        <pre><code>p::before {
+    content: "Note: ";
+    color: red;
+    font-weight: bold;
+}</code></pre>
+        <p>
+          This will add "Note: " in red before the content of each paragraph.
+        </p>
+
+        <h3>Example Exercise</h3>
+        <p>Try using pseudo-elements:</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Pseudo-elements Exercise&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p class="pseudo-element-example"&gt;This is a paragraph to demonstrate pseudo-elements.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </section>
+    </main>
+  </body>
+</html>

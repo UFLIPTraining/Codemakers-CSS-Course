@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UFLIP-CSS</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Navigation and UI Elements</h1>
+    </header>
+    <nav id="nav-bar">
+      <ul>
+        <li>
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="img/UFLIP.png"
+                alt="UFLIP Logo"
+                width="80px"
+                height="15px"
+              />
+            </a>
+          </div>
+        </li>
+        <li><a href="introduction.html">Introduction and Basics</a></li>
+        <li><a href="colorsandbackgrounds.html">Colors and Backgrounds</a></li>
+        <li><a href="boxmodelandlayout.html">Box Model and Layout</a></li>
+        <li><a href="typographyandtextstyling.html ">Typography and Text Styling</a></li>
+        <li><a href="listsandtablesandforms.html">Lists, Tables, and Forms</a></li>
+        <li><a href="positioningandlayout.html">Positioning and Layout</a></li>
+        <li><a href="advancedselectorsandpseudoclasses.html" >Advanced Selectors and Pseudo-classes</a></li>
+        <li><a href="advancedeffectsandanimations.html">Advanced Effects and Animations</a></li>
+        <li><a href="navigationanduielements.html"class="active">Navigation and UI Elements</a></li>
+        <li><a href="imagesandmedia.html">Images and Media</a></li>
+        <li><a href="responsivedesign.html">Responsive Design</a></li>
+        <li><a href="cssgrid.html">CSS Grid</a></li>
+        <li><a href="flexboxandlayouttechniques.html">Flexbox and Layout Techniques</a></li>
+        <li><a href="advancedfeaturesandfunctions.html">Advanced Features and Functions</a></li>
+        <li><a href="toolsreferencesandpractices.html">Tools, References, and Practices</a></li>
+      </ul>
+      <footer>
+        <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+      </footer>
+    </nav>
+    <main id="main-content">
+      <section>
+        <h2>CSS Navigation Bars</h2>
+        <p>
+          Discover how to create and style navigation bars in CSS, including
+          horizontal and vertical menus.
+        </p>
+
+        <h3>Horizontal Navigation Bar</h3>
+        <p>
+          To create a horizontal navigation bar, you can use the following
+          example:
+        </p>
+        <pre><code>/* styles.css */
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-bar ul li {
+    margin: 0 10px;
+}
+.nav-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}</code></pre>
+        <p>Try creating a horizontal navigation bar:</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Navigation Bar Exercise&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;nav class="nav-bar"&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Services&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <h3>Vertical Navigation Bar</h3>
+        <p>
+          To create a vertical navigation bar, you can use the following
+          example:
+        </p>
+        <pre><code>/* styles.css */
+.vertical-nav-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.vertical-nav-bar ul li {
+    margin: 10px 0;
+}
+.vertical-nav-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background 0.3s, color 0.3s;
+}
+.vertical-nav-bar ul li a:hover {
+    background: #1c75bc;
+    color: #fff;
+}</code></pre>
+        <p>Try creating a vertical navigation bar:</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Vertical Navigation Bar Exercise&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;nav class="vertical-nav-bar"&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Services&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </section>
+
+      <section>
+        <h2>CSS Buttons</h2>
+        <p>
+          Learn how to style buttons in CSS, including different states, sizes,
+          and types.
+        </p>
+
+        <h3>Button States</h3>
+        <p>
+          To style a button with different states (e.g., hover, active), you can
+          use the following example:
+        </p>
+        <pre><code>/* styles.css */
+.button {
+    background-color: #1c75bc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.button:hover {
+    background-color: #00cdff;
+}</code></pre>
+        <p>Try styling a button with different states:</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Buttons Exercise&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;button class="button"&gt;Click Me!&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </section>
+
+      <section>
+        <h2>CSS Forms</h2>
+        <p>
+          Discover how to style forms in CSS, including input fields, labels,
+          and validation.
+        </p>
+
+        <h3>Styled Form</h3>
+        <p>To style a form, you can use the following example:</p>
+        <pre><code>/* styles.css */
+.form-example {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.form-example label {
+    margin-bottom: 5px;
+    color: #bebcbc;
+}
+.form-example input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #444;
+    background-color: #232323;
+    color: #fff;
+}
+.form-example button {
+    background-color: #1c75bc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.form-example button:hover {
+    background-color: #00cdff;
+}</code></pre>
+        <p>Try styling a form:</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Forms Exercise&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;form class="form-example"&gt;
+        &lt;label for="name"&gt;Name:&lt;/label&gt;
+        &lt;input type="text" id="name" name="name"&gt;
+        &lt;label for="email"&gt;Email:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email"&gt;
+        &lt;button type="submit"&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </section>
+
+      <section>
+        <h2>CSS Modals</h2>
+        <p>
+          Learn how to create and style modals in CSS for displaying overlay
+          content.
+        </p>
+
+        <h3>Styled Modal</h3>
+        <p>To create and style a modal, you can use the following example:</p>
+        <pre><code>/* styles.css */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background-color: #232323;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+}
+.close-button {
+    color: #fff;
+    float: right;
+    font-size: 1.5em;
+    cursor: pointer;
+}</code></pre>
+        <p>Try creating a modal:</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Modals Exercise&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;button id="open-modal"&gt;Open Modal&lt;/button&gt;
+    &lt;div id="modal" class="modal"&gt;
+        &lt;div class="modal-content"&gt;
+            &lt;span class="close-button"&gt;&times;&lt;/span&gt;
+            &lt;p&gt;This is a modal!&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script&gt;
+        document.getElementById('open-modal').addEventListener('click', function() {
+            document.getElementById('modal').style.display = 'block';
+        });
+        document.querySelector('.close-button').addEventListener('click', function() {
+            document.getElementById('modal').style.display = 'none';
+        });
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </section>
+    </main>
+  </body>
+</html>

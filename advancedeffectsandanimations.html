@@ -3,70 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Advanced Effects and Animations</title>
-    <link rel="stylesheet" href="/src/css/styles.css" />
-    <script src="/src/js/main.js" defer></script>
-  </head>
+    <title>UFLIP-CSS</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <header>
       <h1>Advanced Effects and Animations</h1>
     </header>
-    <nav>
+    <nav id="nav-bar">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li>
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="img/UFLIP.png"
+                alt="UFLIP Logo"
+                width="80px"
+                height="15px"
+              />
+            </a>
+          </div>
+        </li>
         <li><a href="introduction.html">Introduction and Basics</a></li>
         <li><a href="colorsandbackgrounds.html">Colors and Backgrounds</a></li>
         <li><a href="boxmodelandlayout.html">Box Model and Layout</a></li>
-        <li>
-          <a href="typographyandtextstyling.html"
-            >Typography and Text Styling</a
-          >
-        </li>
-        <li>
-          <a href="listsandtablesandforms.html">Lists, Tables, and Forms</a>
-        </li>
+        <li><a href="typographyandtextstyling.html">Typography and Text Styling</a></li>
+        <li><a href="listsandtablesandforms.html">Lists, Tables, and Forms</a></li>
         <li><a href="positioningandlayout.html">Positioning and Layout</a></li>
-        <li>
-          <a href="advancedselectorsandpseudoclasses.html"
-            >Advanced Selectors and Pseudo-classes</a
-          >
-        </li>
-        <li>
-          <a href="advancedeffectsandanimations.html" class="active"
-            >Advanced Effects and Animations</a
-          >
-        </li>
-        <li>
-          <a href="navigationanduielements.html">Navigation and UI Elements</a>
-        </li>
+        <li><a href="advancedselectorsandpseudoclasses.html" >Advanced Selectors and Pseudo-classes</a></li>
+        <li><a href="advancedeffectsandanimations.html "class="active">Advanced Effects and Animations</a></li>
+        <li><a href="navigationanduielements.html">Navigation and UI Elements</a></li>
         <li><a href="imagesandmedia.html">Images and Media</a></li>
         <li><a href="responsivedesign.html">Responsive Design</a></li>
         <li><a href="cssgrid.html">CSS Grid</a></li>
-        <li>
-          <a href="flexboxandlayouttechniques.html"
-            >Flexbox and Layout Techniques</a
-          >
-        </li>
-        <li>
-          <a href="advancedfeaturesandfunctions.html"
-            >Advanced Features and Functions</a
-          >
-        </li>
-        <li>
-          <a href="toolsreferencesandpractices.html"
-            >Tools, References, and Practices</a
-          >
-        </li>
+        <li><a href="flexboxandlayouttechniques.html">Flexbox and Layout Techniques</a></li>
+        <li><a href="advancedfeaturesandfunctions.html">Advanced Features and Functions</a></li>
+        <li><a href="toolsreferencesandpractices.html">Tools, References, and Practices</a></li>
       </ul>
+      <footer>
+        <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+      </footer>
     </nav>
-    <main>
+    <main id="main-content">
       <section>
         <h2>CSS Transitions</h2>
         <p>
           Learn how to create smooth transitions in CSS to enhance the user
           experience.
         </p>
+
+        <h3>Transition Property</h3>
+        <p>
+          The <code>transition</code> property is used to create a smooth
+          transition effect between different states of an element. For example:
+        </p>
+        <pre><code>button {
+    background-color: #1c75bc;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00cdff;
+}</code></pre>
+        <p>This will create a smooth background color transition on hover.</p>
+
         <h3>Example Exercise</h3>
         <p>Try using CSS transitions:</p>
         <pre><code>&lt;!DOCTYPE html&gt;
@@ -82,12 +84,36 @@
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
       </section>
+
       <section>
         <h2>CSS Animations</h2>
         <p>
           Discover how to create animations in CSS to bring your web pages to
           life.
         </p>
+
+        <h3>@keyframes Rule</h3>
+        <p>
+          The <code>@keyframes</code> rule is used to define the animation. For
+          example:
+        </p>
+        <pre><code>@keyframes example {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100px);
+    }
+}
+
+.animation-example {
+    animation: example 2s infinite;
+}</code></pre>
+        <p>
+          This will create an animation that moves an element 100px to the
+          right.
+        </p>
+
         <h3>Example Exercise</h3>
         <p>Try using CSS animations:</p>
         <pre><code>&lt;!DOCTYPE html&gt;
@@ -103,12 +129,24 @@
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
       </section>
+
       <section>
         <h2>CSS Transformations</h2>
         <p>
           Explore the different transformation properties in CSS, including
           scaling, rotating, and skewing elements.
         </p>
+
+        <h3>Transform Property</h3>
+        <p>
+          The <code>transform</code> property is used to apply a 2D or 3D
+          transformation to an element. For example:
+        </p>
+        <pre><code>div {
+    transform: rotate(45deg);
+}</code></pre>
+        <p>This will rotate the div 45 degrees.</p>
+
         <h3>Example Exercise</h3>
         <p>Try using CSS transformations:</p>
         <pre><code>&lt;!DOCTYPE html&gt;
@@ -125,8 +163,5 @@
 &lt;/html&gt;</code></pre>
       </section>
     </main>
-    <footer>
-      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
-    </footer>
   </body>
 </html>

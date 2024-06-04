@@ -3,65 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introduction and Basics</title>
-    <link rel="stylesheet" href="/src/css/styles.css" />
-    <script src="/src/js/main.js" defer></script>
+    <title>UFLIP-CSS</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <header>
       <h1>Introduction and Basics</h1>
     </header>
-    <nav>
+    <nav id="nav-bar">
       <ul>
-        <li><a href="index.html">Home</a></li>
         <li>
-          <a href="introduction.html" class="active">Introduction and Basics</a>
+          <div class="logo">
+            <a href="index.html">
+              <img src="img/UFLIP.png" alt="UFLIP Logo" width="80px" height="15px" />
+            </a>
+          </div>
         </li>
+        <li><a href="introduction.html"class="active">Introduction and Basics</a></li>
         <li><a href="colorsandbackgrounds.html">Colors and Backgrounds</a></li>
         <li><a href="boxmodelandlayout.html">Box Model and Layout</a></li>
-        <li>
-          <a href="typographyandtextstyling.html"
-            >Typography and Text Styling</a
-          >
-        </li>
-        <li>
-          <a href="listsandtablesandforms.html">Lists, Tables, and Forms</a>
-        </li>
+        <li><a href="typographyandtextstyling.html ">Typography and Text Styling</a></li>
+        <li><a href="listsandtablesandforms.html">Lists, Tables, and Forms</a></li>
         <li><a href="positioningandlayout.html">Positioning and Layout</a></li>
-        <li>
-          <a href="advancedselectorsandpseudoclasses.html"
-            >Advanced Selectors and Pseudo-classes</a
-          >
-        </li>
-        <li>
-          <a href="advancedeffectsandanimations.html"
-            >Advanced Effects and Animations</a
-          >
-        </li>
-        <li>
-          <a href="navigationanduielements.html">Navigation and UI Elements</a>
-        </li>
+        <li><a href="advancedselectorsandpseudoclasses.html" >Advanced Selectors and Pseudo-classes</a></li>
+        <li><a href="advancedeffectsandanimations.html">Advanced Effects and Animations</a></li>
+        <li><a href="navigationanduielements.html">Navigation and UI Elements</a></li>
         <li><a href="imagesandmedia.html">Images and Media</a></li>
         <li><a href="responsivedesign.html">Responsive Design</a></li>
         <li><a href="cssgrid.html">CSS Grid</a></li>
-        <li>
-          <a href="flexboxandlayouttechniques.html"
-            >Flexbox and Layout Techniques</a
-          >
-        </li>
-        <li>
-          <a href="advancedfeaturesandfunctions.html"
-            >Advanced Features and Functions</a
-          >
-        </li>
-        <li>
-          <a href="toolsreferencesandpractices.html"
-            >Tools, References, and Practices</a
-          >
-        </li>
+        <li><a href="flexboxandlayouttechniques.html">Flexbox and Layout Techniques</a></li>
+        <li><a href="advancedfeaturesandfunctions.html">Advanced Features and Functions</a></li>
+        <li><a href="toolsreferencesandpractices.html">Tools, References, and Practices</a></li>
       </ul>
+      <footer>
+        <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+      </footer>
     </nav>
-    <main>
+    <main id="main-content">
       <section>
         <h2>Introduction to CSS</h2>
         <p>Learn the basics of CSS, including its history and core concepts.</p>
@@ -123,35 +103,13 @@
         <pre><code>selector {
   property: value;
 }</code></pre>
-        <p><strong>Example:</strong></p>
+        <p>Example:</p>
         <pre><code>body {
   background-color: lightblue;
 }
 h1 {
   color: navy;
   margin-left: 20px;
-}</code></pre>
-      </section>
-      <section>
-        <h2>CSS Syntax</h2>
-        <p>
-          The syntax of a CSS rule set consists of a selector and a declaration
-          block:
-        </p>
-        <ul>
-          <li>
-            <strong>Selector:</strong> Indicates the HTML element to be styled.
-          </li>
-          <li>
-            <strong>Declaration Block:</strong> Contains one or more
-            declarations separated by semicolons. Each declaration includes a
-            CSS property name and a value, separated by a colon.
-          </li>
-        </ul>
-        <p><strong>Example:</strong></p>
-        <pre><code>p {
-  color: red;
-  font-size: 16px;
 }</code></pre>
       </section>
       <section>
@@ -199,36 +157,6 @@ h1 {
         </ul>
       </section>
       <section>
-        <h2>CSS Properties and Values</h2>
-        <p>
-          CSS properties are used to style HTML elements. Here are some basic
-          properties:
-        </p>
-        <ul>
-          <li>
-            <strong>Color:</strong> Sets the color of the text.
-            <pre><code>color: red;</code></pre>
-          </li>
-          <li>
-            <strong>Background-color:</strong> Sets the background color of an
-            element.
-            <pre><code>background-color: lightgray;</code></pre>
-          </li>
-          <li>
-            <strong>Font-size:</strong> Sets the size of the font.
-            <pre><code>font-size: 16px;</code></pre>
-          </li>
-          <li>
-            <strong>Margin:</strong> Sets the space outside an element.
-            <pre><code>margin: 20px;</code></pre>
-          </li>
-          <li>
-            <strong>Padding:</strong> Sets the space inside an element.
-            <pre><code>padding: 10px;</code></pre>
-          </li>
-        </ul>
-      </section>
-      <section>
         <h2>Example HTML Document with Basic CSS</h2>
         <p>
           Here is a semantic HTML document that you can use to practice writing
@@ -240,7 +168,7 @@ h1 {
     &lt;meta charset=&quot;UTF-8&quot;&gt;
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
     &lt;title&gt;My First CSS Page&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/styles.css&quot;&gt;
 &lt;/head&gt;
 &lt;body&gt;
     &lt;header&gt;
@@ -348,9 +276,10 @@ footer {
   width: 100%;
 }</code></pre>
       </section>
+      <!-- <div class="pagination">
+        <a href="index.html" class="pagination-button">Back</a>
+        <a href="colorsandbackgrounds.html" class="pagination-button">Next</a>
+      </div> -->
     </main>
-    <footer>
-      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
-    </footer>
   </body>
 </html>
