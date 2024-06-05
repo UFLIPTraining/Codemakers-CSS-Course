@@ -31,6 +31,8 @@
       <li><a href="pseudoclasses.html">Pseudo Classes</a></li>
       <li><a href="responsivedesign.html">Responsive Design + Images + Media</a></li>
       <li><a href="displaymodels.html">Weird Display Models (Lists, Tables, etc)</a></li>
+      <li><a href="capstone.html">Capstone Project</a></li>
+      <li><a href="toolsreferencesandpractices.html">Tools, References, and Practices</a></li>
       <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn">Extras</a>
         <div class="dropdown-content">
@@ -45,8 +47,7 @@
           <a href="listsandtablesandforms.html">Lists, Tables, and Forms</a>
           <a href="navigationanduielements.html">Navigation and UI Elements</a>
           <a href="positioningandlayout.html">Positioning and Layout</a>
-          <a href="responsivedesign.html">Responsive Design</a>
-          <a href="toolsreferencesandpractices.html">Tools, References, and Practices</a>
+          <a href="responsivedesign2.html">Responsive Design</a>
           <a href="typographyandtextstyling.html">Typography and Text Styling</a>
         </div>
       </li>
@@ -59,19 +60,123 @@
     <section>
       <h2>About This Course</h2>
       <p>
-        This course is designed to introduce you to the world of CSS,
-        providing a comprehensive guide from the basics to advanced topics.
-        Each section focuses on different aspects of CSS to help you build
-        beautiful and responsive web pages.
+        This course is designed to introduce you to the world of CSS, providing a comprehensive guide from the basics to advanced topics. Each section focuses on different aspects of CSS to help you build beautiful and responsive web pages. This course will serve as your HTML/CSS playground, aiming to equip you with the knowledge and skills to enhance your web development capabilities.
       </p>
+    </section>
+
+    <section>
+      <h2>How To</h2>
+      <h3>Installing Visual Studio Code</h3>
+      <ol>
+        <li>Go to the Visual Studio Code website: <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></li>
+        <li>Click on the download button for your operating system (Windows, macOS, or Linux).</li>
+        <li>Once the download is complete, open the installer and follow the installation instructions.</li>
+      </ol>
+      <h3>Creating and Referencing a CSS Style Sheet</h3>
+      <p>Follow these steps to create a CSS style sheet and reference it in your HTML file:</p>
+      <ol>
+        <li>Open Visual Studio Code.</li>
+        <li>Create a new folder for your project.</li>
+        <li>Inside the project folder, create a new file and name it <code>styles.css</code>.</li>
+        <li>Add some CSS rules to the <code>styles.css</code> file. For example:</li>
+      </ol>
+      <pre><code>/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #267738;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  background-color: #267738;
+}
+
+main {
+  padding: 20px;
+}</code></pre>
+      <ol start="5">
+        <li>Create a new file in the project folder and name it <code>index.html</code>.</li>
+        <li>Add the following HTML code to the <code>index.html</code> file to reference the CSS style sheet:</li>
+      </ol>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;My Project&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;Welcome to My Project&lt;/h1&gt;
+  &lt;/header&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+  &lt;main&gt;
+    &lt;p&gt;This is the main content area.&lt;/p&gt;
+  &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      <p>Save both files and open the <code>index.html</code> file in a web browser to see your styled page.</p>
+      <h3>Using the Capstone Project from the HTML Course</h3>
+      <p>
+        Throughout this course, you will be building upon the capstone project you created in the HTML course. Make sure to use the HTML structure you developed previously and apply the new CSS skills you learn in this course.
+      </p>
+    </section>
+
+    <section>
       <h2>Capstone Project</h2>
       <p>
-        For the capstone project, you will rebuild the blog you created in the
-        HTML Course. Ensure you don't add any inline styling and stick to CSS
-        for all your styling needs. If you need to rebuild the HTML capstone,
-        that's okay. This project will help you consolidate all the CSS skills
-        you will learn in this course.
+        For the capstone project, you will rebuild the blog you created in the HTML Course. Ensure you don't add any inline styling and stick to CSS for all your styling needs. If you need to rebuild the HTML capstone, that's okay. This project will help you consolidate all the CSS skills you will learn in this course.
       </p>
+      <h3>Steps for Styling Your Blog</h3>
+      <ol>
+        <li><strong>Review Your HTML Structure:</strong> Ensure your blog uses semantic HTML elements, ARIA roles for accessibility, and is SEO optimized.</li>
+        <li><strong>Create and Link a CSS File:</strong> Create a new CSS file (e.g., <code>styles.css</code>) and link it to your HTML file.</li>
+        <li><strong>Apply Base Styles:</strong> Set up base styles, including resetting margins and paddings, setting a font family, and defining general styles for the body and main container.</li>
+        <li><strong>Style the Header:</strong> Set background color, padding, and typography for the header.</li>
+        <li><strong>Style the Main Content:</strong> Focus on typography, spacing, and layout for articles and sections. Ensure images are responsive.</li>
+        <li><strong>Style Navigation and Footer:</strong> Ensure consistent styling for navigation links and footer content.</li>
+        <li><strong>Add Responsive Design:</strong> Use media queries to adjust styles for different screen sizes.</li>
+      </ol>
+      <h3>Exercises</h3>
+      <ol>
+        <li>Review and refactor your HTML blog post to ensure it uses semantic elements, ARIA attributes, and is SEO optimized. Make any necessary changes to improve the structure and accessibility.</li>
+        <li>Create and link a CSS file to your HTML blog post. Apply base styles to set up a consistent font, background color, and basic layout for the body and main container.</li>
+        <li>Style your blog's header, main content (including articles, sections, and images), navigation bar, and footer. Add responsive design using media queries to ensure your blog looks good on different screen sizes.</li>
+      </ol>
     </section>
   </main>
 </body>

@@ -1,181 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UFLIP CSS Course</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="img/favicon.png" type="image/png" />
-    <script src="js/main.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <h1>UFLIP CSS Course</h1>
-    </header>
-    <nav id="nav-bar">
-      <ul>
-        <li>
-          <div class="logo">
-            <a href="index.html">
-              <img src="img/UFLIP.png" alt="UFLIP Logo" width="80px" height="15px" />
-            </a>
-          </div>
-        </li>
-        <!-- <li><a href="colorsandbackgrounds.html">Colors and Backgrounds</a></li>
-        <li><a href="boxmodelandlayout.html">Box Model and Layout</a></li>
-        <li><a href="typographyandtextstyling.html">Typography and Text Styling</a></li>
-        <li><a href="listsandtablesandforms.html">Lists, Tables, and Forms</a></li>
-        <li><a href="positioningandlayout.html">Positioning and Layout</a></li>
-        <li><a href="advancedselectorsandpseudoclasses.html">Advanced Selectors and Pseudo-classes</a></li>
-        <li><a href="advancedeffectsandanimations.html">Advanced Effects and Animations</a></li>
-        <li><a href="navigationanduielements.html">Navigation and UI Elements</a></li>
-        <li><a href="imagesandmedia.html">Images and Media</a></li>
-        <li><a href="responsivedesign2.html" class="active">Responsive Design</a></li>
-        <li><a href="cssgrid.html">CSS Grid</a></li>
-        <li><a href="flexboxandlayouttechniques.html">Flexbox and Layout Techniques</a></li>
-        <li><a href="advancedfeaturesandfunctions.html">Advanced Features and Functions</a></li>
-        <li><a href="toolsreferencesandpractices.html">Tools, References, and Practices</a></li> -->
-      </ul>
-      <footer>
-        <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
-      </footer>
-    </nav>
-    <main id="main-content">
-      <section>
-        <h2>CSS Colors</h2>
-        <p>
-          Explore the different color options available in CSS, including color
-          names, hex codes, RGB, and HSL values.
-        </p>
-        <h3>Color Names</h3>
-        <p>CSS supports 140 standard color names. For example:</p>
-        <pre><code>p {
-    color: red;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UFLIP CSS Course</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="img/favicon.png" type="image/png" />
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>UFLIP CSS Course</h1>
+  </header>
+  <nav id="nav-bar">
+    <ul>
+      <li>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/UFLIP.png" alt="UFLIP Logo" width="80px" height="15px" />
+          </a>
+        </div>
+      </li>
+      <!-- Navigation items can be added here -->
+    </ul>
+    <footer>
+      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+    </footer>
+  </nav>
+  <main id="main-content">
+    <section>
+      <h2>CSS Colors</h2>
+      <p>Explore the different color options available in CSS, including color names, hex codes, RGB, and HSL values.</p>
+      
+      <h3>Color Names</h3>
+      <p>CSS supports 140 standard color names. For example:</p>
+      <pre><code>p {
+  color: red;
 }</code></pre>
-        <p>This will make the text in the paragraph red.</p>
+      <p>This will make the text in the paragraph red.</p>
 
-        <h3>Hex Codes</h3>
-        <p>
-          Hexadecimal color codes are six-digit codes representing the intensity
-          of red, green, and blue. For example:
-        </p>
-        <pre><code>p {
-    color: #ff0000;
+      <h3>Hex Codes</h3>
+      <p>Hexadecimal color codes are six-digit codes representing the intensity of red, green, and blue. For example:</p>
+      <pre><code>p {
+  color: #ff0000;
 }</code></pre>
-        <p>This will make the text in the paragraph red.</p>
+      <p>This will make the text in the paragraph red.</p>
 
-        <h3>RGB</h3>
-        <p>
-          RGB values are specified with the rgb() function, which defines the
-          intensity of red, green, and blue. For example:
-        </p>
-        <pre><code>p {
-    color: rgb(255, 0, 0);
+      <h3>RGB</h3>
+      <p>RGB values are specified with the rgb() function, which defines the intensity of red, green, and blue. For example:</p>
+      <pre><code>p {
+  color: rgb(255, 0, 0);
 }</code></pre>
-        <p>This will make the text in the paragraph red.</p>
+      <p>This will make the text in the paragraph red.</p>
 
-        <h3>HSL</h3>
-        <p>HSL stands for hue, saturation, and lightness. For example:</p>
-        <pre><code>p {
-    color: hsl(0, 100%, 50%);
+      <h3>HSL</h3>
+      <p>HSL stands for hue, saturation, and lightness. For example:</p>
+      <pre><code>p {
+  color: hsl(0, 100%, 50%);
 }</code></pre>
-        <p>This will make the text in the paragraph red.</p>
+      <p>This will make the text in the paragraph red.</p>
 
-        <h3>Example Exercise</h3>
-        <p>
-          Try changing the color of the text in the following paragraph using
-          different color values:
-        </p>
-        <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
+      <h3>Example Exercise</h3>
+      <p>Try changing the color of the text in the following paragraph using different color values:</p>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
 &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;CSS Colors Exercise&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;CSS Colors Exercise&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;p class=&quot;color-exercise&quot;&gt;This is a sample text.&lt;/p&gt;
+  &lt;p class="color-exercise"&gt;This is a sample text.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-        <p>In your <code>styles.css</code> file, add the following:</p>
-        <pre><code>.color-exercise {
-    /* Add your color values here */
-    color: #ff0000; /* Example: Change this value */
+      <p>In your <code>styles.css</code> file, add the following:</p>
+      <pre><code>.color-exercise {
+  /* Add your color values here */
+  color: #ff0000; /* Example: Change this value */
 }</code></pre>
-      </section>
 
-      <section>
-        <h2>CSS Backgrounds</h2>
-        <p>
-          Learn how to set and style backgrounds in CSS, including background
-          color, images, and gradients.
-        </p>
+      <h3>Additional Exercises</h3>
+      <ol>
+        <li>Change the color of the text using a standard color name.</li>
+        <li>Use an RGB value to change the color of the text.</li>
+        <li>Use an HSL value to change the color of the text.</li>
+      </ol>
+    </section>
 
-        <h3>Background Color</h3>
-        <p>
-          You can set a background color for an element using the
-          <code>background-color</code> property. For example:
-        </p>
-        <pre><code>div {
-    background-color: lightblue;
+    <section>
+      <h2>CSS Backgrounds</h2>
+      <p>Learn how to set and style backgrounds in CSS, including background color, images, and gradients.</p>
+      
+      <h3>Background Color</h3>
+      <p>You can set a background color for an element using the <code>background-color</code> property. For example:</p>
+      <pre><code>div {
+  background-color: lightblue;
 }</code></pre>
-        <p>This will set the background color of the div to light blue.</p>
+      <p>This will set the background color of the div to light blue.</p>
 
-        <h3>Background Image</h3>
-        <p>
-          You can set a background image for an element using the
-          <code>background-image</code> property. For example:
-        </p>
-        <pre><code>div {
-    background-image: url('background.jpg');
+      <h3>Background Image</h3>
+      <p>You can set a background image for an element using the <code>background-image</code> property. For example:</p>
+      <pre><code>div {
+  background-image: url('background.jpg');
 }</code></pre>
-        <p>
-          This will set the background image of the div to the specified image.
-        </p>
+      <p>This will set the background image of the div to the specified image.</p>
 
-        <h3>Background Gradient</h3>
-        <p>
-          CSS gradients let you display smooth transitions between two or more
-          specified colors. For example:
-        </p>
-        <pre><code>div {
-    background: linear-gradient(to right, red, yellow);
+      <h3>Background Gradient</h3>
+      <p>CSS gradients let you display smooth transitions between two or more specified colors. For example:</p>
+      <pre><code>div {
+  background: linear-gradient(to right, red, yellow);
 }</code></pre>
-        <p>
-          This will create a gradient background that transitions from red to
-          yellow.
-        </p>
+      <p>This will create a gradient background that transitions from red to yellow.</p>
 
-        <h3>Example Exercise</h3>
-        <p>
-          Try changing the background of the following div using different
-          background properties:
-        </p>
-        <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
+      <h3>Example Exercise</h3>
+      <p>Try changing the background of the following div using different background properties:</p>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
 &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;CSS Backgrounds Exercise&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;CSS Backgrounds Exercise&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;div class=&quot;background-exercise&quot;&gt;This is a sample div.&lt;/div&gt;
+  &lt;div class="background-exercise"&gt;This is a sample div.&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-        <p>In your <code>styles.css</code> file, add the following:</p>
-        <pre><code>.background-exercise {
-    /* Add your background properties here */
-    background-color: lightblue; /* Example: Change this value */
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+      <p>In your <code>styles.css</code> file, add the following:</p>
+      <pre><code>.background-exercise {
+  /* Add your background properties here */
+  background-color: lightblue; /* Example: Change this value */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }</code></pre>
-      </section>
-    </main>
-  </body>
+
+      <h3>Additional Exercises</h3>
+      <ol>
+        <li>Change the background color of the div to a different color.</li>
+        <li>Add a background image to the div and adjust its size and position.</li>
+        <li>Create a gradient background for the div using at least three colors.</li>
+      </ol>
+    </section>
+  </main>
+</body>
 </html>
