@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UFLIP CSS Course</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>UFLIP CSS Course</h1>
+  </header>
+  <nav id="nav-bar">
+    <ul>
+      <li>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/UFLIP.png" alt="UFLIP Logo" width="80px" height="15px">
+          </a>
+        </div>
+      </li>
+      <li><a href="inspecttool.html">Using the Inspect Tool</a></li>
+      <li><a href="displayposition.html">Display and Position</a></li>
+      <li><a href="borderscolors.html">Borders and Colors</a></li>
+      <li><a href="typography.html">Typography</a></li>
+      <li><a href="mediaqueries.html">Media Queries and Units via Print CSS</a></li>
+      <li><a href="grid.html">Grid</a></li>
+      <li><a href="flexbox.html">Flexbox</a></li>
+      <li><a href="pseudoclasses.html">Pseudo Classes</a></li>
+      <li><a href="responsivedesign.html">Responsive Design + Images + Media</a></li>
+      <li><a href="displaymodels.html">Weird Display Models (Lists, Tables, etc)</a></li>
+      <li><a href="capstone.html" class="active">Capstone Project</a></li>
+      <li><a href="toolsreferencesandpractices.html">Tools, References, and Practices</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Extras</a>
+        <div class="dropdown-content">
+          <a href="advancedselectorsandpseudoclasses.html">Advanced Selectors and Pseudo-classes</a>
+          <a href="advancedeffectsandanimations.html">Advanced Effects and Animations</a>
+          <a href="advancedfeaturesandfunctions.html">Advanced Features and Functions</a>
+          <a href="boxmodelandlayout.html">Box Model and Layout</a>
+          <a href="colorsandbackgrounds.html">Colors and Backgrounds</a>
+          <a href="cssgrid.html">CSS Grid</a>
+          <a href="flexboxandlayouttechniques.html">Flexbox and Layout Techniques</a>
+          <a href="imagesandmedia.html">Images and Media</a>
+          <a href="listsandtablesandforms.html">Lists, Tables, and Forms</a>
+          <a href="navigationanduielements.html">Navigation and UI Elements</a>
+          <a href="positioningandlayout.html">Positioning and Layout</a>
+          <a href="responsivedesign2.html">Responsive Design</a>
+          <a href="typographyandtextstyling.html">Typography and Text Styling</a>
+        </div>
+      </li>
+    </ul>
+    <footer>
+      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+    </footer>
+  </nav>
+  <main id="main-content">
+    <section>
+      <h2>Capstone Project: Styling Your Blog</h2>
+      <p>In this capstone project, you will apply the CSS skills you've learned to style a blog post created with HTML. The HTML blog post should use semantic elements, ARIA attributes, and be SEO optimized.</p>
+      
+      <h3>Step 1: Review Your HTML Structure</h3>
+      <p>Ensure your HTML blog post is well-structured, using semantic tags like <code>&lt;header&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;footer&gt;</code>. Also, include ARIA roles and attributes where necessary to improve accessibility.</p>
+
+      <h3>Step 2: Create a CSS File</h3>
+      <p>Create a new CSS file (e.g., <code>styles.css</code>) in your project directory. Link this CSS file to your HTML blog post by adding the following line within the <code>&lt;head&gt;</code> section of your HTML file:</p>
+      <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+
+      <h3>Step 3: Apply Base Styles</h3>
+      <p>Start by adding some base styles to your CSS file. These can include resetting margins and paddings, setting a base font, and defining general styles for the body and main container.</p>
+      <pre><code>/* styles.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}</code></pre>
+
+      <h3>Step 4: Style Your Header</h3>
+      <p>Style the header section of your blog. This can include setting a background color, padding, and typography for the header elements.</p>
+      <pre><code>/* styles.css */
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}</code></pre>
+
+      <h3>Step 5: Style the Main Content</h3>
+      <p>Apply styles to the main content of your blog, including articles, sections, and images. Focus on typography, spacing, and layout.</p>
+      <pre><code>/* styles.css */
+article {
+  background: #fff;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+  color: #333;
+}
+
+article p {
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}</code></pre>
+
+      <h3>Step 6: Style Navigation and Footer</h3>
+      <p>Style your navigation bar and footer to ensure a consistent look and feel throughout your blog.</p>
+      <pre><code>/* styles.css */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}</code></pre>
+
+      <h3>Step 7: Add Responsive Design</h3>
+      <p>Use media queries to make your blog responsive, ensuring it looks good on different screen sizes.</p>
+      <pre><code>/* styles.css */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+}</code></pre>
+
+      <h3>Exercises</h3>
+      <ol>
+        <li>Review and refactor your HTML blog post to ensure it uses semantic elements, ARIA attributes, and is SEO optimized. Make any necessary changes to improve the structure and accessibility.</li>
+        <li>Create and link a CSS file to your HTML blog post. Apply base styles to set up a consistent font, background color, and basic layout for the body and main container.</li>
+        <li>Style your blog's header, main content (including articles, sections, and images), navigation bar, and footer. Add responsive design using media queries to ensure your blog looks good on different screen sizes.</li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>

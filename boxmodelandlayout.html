@@ -21,20 +21,7 @@
           </a>
         </div>
       </li>
-      <!-- <li><a href="colorsandbackgrounds.html">Colors and Backgrounds</a></li>
-      <li><a href="boxmodelandlayout.html">Box Model and Layout</a></li>
-      <li><a href="typographyandtextstyling.html">Typography and Text Styling</a></li>
-      <li><a href="listsandtablesandforms.html">Lists, Tables, and Forms</a></li>
-      <li><a href="positioningandlayout.html">Positioning and Layout</a></li>
-      <li><a href="advancedselectorsandpseudoclasses.html">Advanced Selectors and Pseudo-classes</a></li>
-      <li><a href="advancedeffectsandanimations.html">Advanced Effects and Animations</a></li>
-      <li><a href="navigationanduielements.html">Navigation and UI Elements</a></li>
-      <li><a href="imagesandmedia.html">Images and Media</a></li>
-      <li><a href="responsivedesign2.html" class="active">Responsive Design</a></li>
-      <li><a href="cssgrid.html">CSS Grid</a></li>
-      <li><a href="flexboxandlayouttechniques.html">Flexbox and Layout Techniques</a></li>
-      <li><a href="advancedfeaturesandfunctions.html">Advanced Features and Functions</a></li>
-      <li><a href="toolsreferencesandpractices.html">Tools, References, and Practices</a></li> -->
+      <!-- Navigation items can be added here -->
     </ul>
     <footer>
       <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
@@ -49,27 +36,34 @@
       <pre><code>
 /* styles.css */
 .box-model-example {
-    width: 300px;
-    padding: 20px;
-    border: 5px solid #00cdff;
-    margin: 15px;
-    background-color: #fff;
+  width: 300px;
+  padding: 20px;
+  border: 5px solid #00cdff;
+  margin: 15px;
+  background-color: #fff;
 }</code></pre>
       <h3>Example Exercise</h3>
       <p>Try creating a div with the following CSS properties to see how the box model works:</p>
       <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;CSS Box Model Exercise&lt;/title&gt;
-    &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;CSS Box Model Exercise&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;div class="box-model-example"&gt;This is a box model example.&lt;/div&gt;
+  &lt;div class="box-model-example"&gt;This is a box model example.&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
+      <h3>Exercises</h3>
+      <ol>
+        <li>Create a new div with different padding and margin values and observe the changes.</li>
+        <li>Adjust the border width and color of the div and see how it affects the layout.</li>
+        <li>Use the <code>box-sizing: border-box;</code> property and see how it changes the box model behavior.</li>
+      </ol>
     </section>
+    
     <section>
       <h2>CSS Display</h2>
       <p>Learn about the different display properties in CSS and how to use them to control the layout of your elements.</p>
@@ -78,45 +72,52 @@
       <pre><code>
 /* styles.css */
 .display-example-block {
-    display: block;
-    width: 100%;
-    background-color: #00cdff;
-    padding: 10px;
-    margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  background-color: #00cdff;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .display-example-inline {
-    display: inline;
-    background-color: #febd1d;
-    padding: 10px;
-    margin-right: 10px;
+  display: inline;
+  background-color: #febd1d;
+  padding: 10px;
+  margin-right: 10px;
 }
 
 .display-example-inline-block {
-    display: inline-block;
-    background-color: #e55440;
-    padding: 10px;
-    margin-right: 10px;
+  display: inline-block;
+  background-color: #e55440;
+  padding: 10px;
+  margin-right: 10px;
 }</code></pre>
       <h3>Example Exercise</h3>
       <p>Try creating multiple divs with different display properties to see how they behave:</p>
       <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;CSS Display Exercise&lt;/title&gt;
-    &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;CSS Display Exercise&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;div class="display-example-block"&gt;Block Element&lt;/div&gt;
-    &lt;div class="display-example-inline"&gt;Inline Element&lt;/div&gt;
-    &lt;div class="display-example-inline"&gt;Inline Element&lt;/div&gt;
-    &lt;div class="display-example-inline-block"&gt;Inline-Block Element&lt;/div&gt;
-    &lt;div class="display-example-inline-block"&gt;Inline-Block Element&lt;/div&gt;
+  &lt;div class="display-example-block"&gt;Block Element&lt;/div&gt;
+  &lt;div class="display-example-inline"&gt;Inline Element&lt;/div&gt;
+  &lt;div class="display-example-inline"&gt;Inline Element&lt;/div&gt;
+  &lt;div class="display-example-inline-block"&gt;Inline-Block Element&lt;/div&gt;
+  &lt;div class="display-example-inline-block"&gt;Inline-Block Element&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
+      <h3>Exercises</h3>
+      <ol>
+        <li>Create an inline element and observe how it affects the flow of content around it.</li>
+        <li>Change the display property of an element from <code>block</code> to <code>inline-block</code> and see the difference.</li>
+        <li>Hide an element using the <code>display: none;</code> property and observe its impact on the layout.</li>
+      </ol>
     </section>
+    
     <section>
       <h2>CSS Flexbox</h2>
       <p>Discover how to use CSS Flexbox to create flexible and responsive layouts.</p>
@@ -125,39 +126,46 @@
       <pre><code>
 /* styles.css */
 .flex-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #232323;
-    height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #232323;
+  height: 200px;
 }
 
 .flex-item {
-    background-color: #1c75bc;
-    color: #fff;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
+  background-color: #1c75bc;
+  color: #fff;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
 }</code></pre>
       <h3>Example Exercise</h3>
       <p>Try creating a flex container with multiple flex items:</p>
       <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;CSS Flexbox Exercise&lt;/title&gt;
-    &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;CSS Flexbox Exercise&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;div class="flex-container"&gt;
-        &lt;div class="flex-item"&gt;Flex Item 1&lt;/div&gt;
-        &lt;div class="flex-item"&gt;Flex Item 2&lt;/div&gt;
-        &lt;div class="flex-item"&gt;Flex Item 3&lt;/div&gt;
-    &lt;/div&gt;
+  &lt;div class="flex-container"&gt;
+    &lt;div class="flex-item"&gt;Flex Item 1&lt;/div&gt;
+    &lt;div class="flex-item"&gt;Flex Item 2&lt;/div&gt;
+    &lt;div class="flex-item"&gt;Flex Item 3&lt;/div&gt;
+  &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
+      <h3>Exercises</h3>
+      <ol>
+        <li>Adjust the <code>justify-content</code> property to align items to the start, center, and end of the container.</li>
+        <li>Change the <code>flex-direction</code> property to <code>column</code> and observe how the layout changes.</li>
+        <li>Use the <code>align-items</code> property to align items to the start, center, and end of the cross-axis.</li>
+      </ol>
     </section>
+    
     <section>
       <h2>CSS Grid</h2>
       <p>Explore the CSS Grid layout system and how to use it to create complex and responsive grid layouts.</p>
@@ -166,40 +174,46 @@
       <pre><code>
 /* styles.css */
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    background-color: #232323;
-    padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  background-color: #232323;
+  padding: 10px;
 }
 
 .grid-item {
-    background-color: #1c75bc;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+  background-color: #1c75bc;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }</code></pre>
       <h3>Example Exercise</h3>
       <p>Try creating a grid container with multiple grid items:</p>
       <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;CSS Grid Exercise&lt;/title&gt;
-    &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;CSS Grid Exercise&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;div class="grid-container"&gt;
-        &lt;div class="grid-item"&gt;Grid Item 1&lt;/div&gt;
-        &lt;div class="grid-item"&gt;Grid Item 2&lt;/div&gt;
-        &lt;div class="grid-item"&gt;Grid Item 3&lt;/div&gt;
-        &lt;div class="grid-item"&gt;Grid Item 4&lt;/div&gt;
-        &lt;div class="grid-item"&gt;Grid Item 5&lt;/div&gt;
-        &lt;div class="grid-item"&gt;Grid Item 6&lt;/div&gt;
-    &lt;/div&gt;
+  &lt;div class="grid-container"&gt;
+    &lt;div class="grid-item"&gt;Grid Item 1&lt;/div&gt;
+    &lt;div class="grid-item"&gt;Grid Item 2&lt;/div&gt;
+    &lt;div class="grid-item"&gt;Grid Item 3&lt;/div&gt;
+    &lt;div class="grid-item"&gt;Grid Item 4&lt;/div&gt;
+    &lt;div class="grid-item"&gt;Grid Item 5&lt;/div&gt;
+    &lt;div class="grid-item"&gt;Grid Item 6&lt;/div&gt;
+  &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
+      <h3>Exercises</h3>
+      <ol>
+        <li>Create a grid layout with 4 columns and 2 rows, and place items in specific grid areas using the <code>grid-area</code> property.</li>
+        <li>Use the <code>grid-template-rows</code> property to define different row heights and observe the changes.</li>
+        <li>Adjust the <code>gap</code> property to change the spacing between grid items.</li>
+      </ol>
     </section>
   </main>
 </body>

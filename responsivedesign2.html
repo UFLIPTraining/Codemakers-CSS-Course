@@ -12,7 +12,7 @@
     <header>
         <h1>UFLIP CSS Course</h1>
     </header>
-      <nav id="nav-bar">
+    <nav id="nav-bar">
     <ul>
       <li>
         <div class="logo">
@@ -77,6 +77,93 @@
     &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
+
+      <h3>Example 1: Responsive Flexbox Layout</h3>
+      <p>Using Flexbox to create a responsive layout:</p>
+      <pre><code>/* styles.css */
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.flexbox-item {
+    flex: 1 1 calc(33.33% - 20px);
+    background-color: #febd1d;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    .flexbox-item {
+        flex: 1 1 100%;
+    }
+}</code></pre>
+      <p>Create a responsive Flexbox layout:</p>
+      <pre><code>&lt;div class="flexbox-container"&gt;
+    &lt;div class="flexbox-item"&gt;Flex Item 1&lt;/div&gt;
+    &lt;div class="flexbox-item"&gt;Flex Item 2&lt;/div&gt;
+    &lt;div class="flexbox-item"&gt;Flex Item 3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      <h3>Example 2: Responsive Columns</h3>
+      <p>Create a multi-column layout that adjusts based on the screen size:</p>
+      <pre><code>/* styles.css */
+.column-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.column-item {
+    flex: 1 1 300px;
+    background-color: #1c75bc;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .column-item {
+        flex: 1 1 100%;
+    }
+}</code></pre>
+      <p>Create responsive columns:</p>
+      <pre><code>&lt;div class="column-container"&gt;
+    &lt;div class="column-item"&gt;Column 1&lt;/div&gt;
+    &lt;div class="column-item"&gt;Column 2&lt;/div&gt;
+    &lt;div class="column-item"&gt;Column 3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      <h3>Example 3: Responsive Image Gallery</h3>
+      <p>Create a responsive image gallery that adjusts based on the screen size:</p>
+      <pre><code>/* styles.css */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-item {
+    flex: 1 1 calc(25% - 10px);
+    background-color: #eee;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    .gallery-item {
+        flex: 1 1 100%;
+    }
+}</code></pre>
+      <p>Create a responsive image gallery:</p>
+      <pre><code>&lt;div class="gallery-container"&gt;
+    &lt;div class="gallery-item"&gt;&lt;img src="img1.jpg" alt="Image 1" style="width:100%;"&gt;&lt;/div&gt;
+    &lt;div class="gallery-item"&gt;&lt;img src="img2.jpg" alt="Image 2" style="width:100%;"&gt;&lt;/div&gt;
+    &lt;div class="gallery-item"&gt;&lt;img src="img3.jpg" alt="Image 3" style="width:100%;"&gt;&lt;/div&gt;
+    &lt;div class="gallery-item"&gt;&lt;img src="img4.jpg" alt="Image 4" style="width:100%;"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
     </section>
     <section>
       <h2>RWD Viewport</h2>
@@ -114,6 +201,93 @@
     &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
+
+      <h3>Example 1: Mobile-Friendly Navigation</h3>
+      <p>Create a mobile-friendly navigation menu:</p>
+      <pre><code>/* styles.css */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+@media (max-width: 600px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}</code></pre>
+      <p>Create a mobile-friendly navigation menu:</p>
+      <pre><code>&lt;div class="nav-container"&gt;
+    &lt;div class="nav-item"&gt;Home&lt;/div&gt;
+    &lt;div class="nav-item"&gt;About&lt;/div&gt;
+    &lt;div class="nav-item"&gt;Services&lt;/div&gt;
+    &lt;div class="nav-item"&gt;Contact&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      <h3>Example 2: Responsive Footer</h3>
+      <p>Create a footer that adjusts based on the screen size:</p>
+      <pre><code>/* styles.css */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.footer-item {
+    margin: 0 10px;
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}</code></pre>
+      <p>Create a responsive footer:</p>
+      <pre><code>&lt;div class="footer-container"&gt;
+    &lt;div class="footer-item"&gt;Footer Item 1&lt;/div&gt;
+    &lt;div class="footer-item"&gt;Footer Item 2&lt;/div&gt;
+    &lt;div class="footer-item"&gt;Footer Item 3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      <h3>Example 3: Responsive Cards</h3>
+      <p>Create a responsive card layout:</p>
+      <pre><code>/* styles.css */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card-item {
+    flex: 1 1 calc(33.33% - 20px);
+    background-color: #1c75bc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    .card-item {
+        flex: 1 1 100%;
+    }
+}</code></pre>
+      <p>Create responsive cards:</p>
+      <pre><code>&lt;div class="card-container"&gt;
+    &lt;div class="card-item"&gt;Card 1&lt;/div&gt;
+    &lt;div class="card-item"&gt;Card 2&lt;/div&gt;
+    &lt;div class="card-item"&gt;Card 3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
     </section>
     <section>
       <h2>RWD Grid View</h2>
@@ -150,6 +324,117 @@
     &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
+
+      <h3>Example 1: Grid Template Areas</h3>
+      <p>Create a responsive layout using grid template areas:</p>
+      <pre><code>/* styles.css */
+.grid-template-areas-container {
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'sidebar main'
+        'footer footer';
+    gap: 10px;
+}
+
+.grid-header {
+    grid-area: header;
+    background-color: #1c75bc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-sidebar {
+    grid-area: sidebar;
+    background-color: #00cdff;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-main {
+    grid-area: main;
+    background-color: #febd1d;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .grid-template-areas-container {
+        grid-template-areas:
+            'header'
+            'main'
+            'sidebar'
+            'footer';
+    }
+}</code></pre>
+      <p>Create a responsive layout using grid template areas:</p>
+      <pre><code>&lt;div class="grid-template-areas-container"&gt;
+    &lt;div class="grid-header"&gt;Header&lt;/div&gt;
+    &lt;div class="grid-sidebar"&gt;Sidebar&lt;/div&gt;
+    &lt;div class="grid-main"&gt;Main&lt;/div&gt;
+    &lt;div class="grid-footer"&gt;Footer&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      <h3>Example 2: Responsive Grid with Auto-Placement</h3>
+      <p>Use auto-placement to create a responsive grid:</p>
+      <pre><code>/* styles.css */
+.auto-grid-container {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+.auto-grid-item {
+    background-color: #1c75bc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.auto-grid-item-large {
+    grid-column: span 2;
+}</code></pre>
+      <p>Create a responsive grid with auto-placement:</p>
+      <pre><code>&lt;div class="auto-grid-container"&gt;
+    &lt;div class="auto-grid-item"&gt;Item 1&lt;/div&gt;
+    &lt;div class="auto-grid-item auto-grid-item-large"&gt;Item 2&lt;/div&gt;
+    &lt;div class="auto-grid-item"&gt;Item 3&lt;/div&gt;
+    &lt;div class="auto-grid-item"&gt;Item 4&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+      <h3>Example 3: Grid with Different Column Sizes</h3>
+      <p>Create a grid with different column sizes:</p>
+      <pre><code>/* styles.css */
+.different-column-sizes-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+}
+
+.different-column-item {
+    background-color: #1c75bc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}</code></pre>
+      <p>Create a grid with different column sizes:</p>
+      <pre><code>&lt;div class="different-column-sizes-container"&gt;
+    &lt;div class="different-column-item"&gt;Column 1&lt;/div&gt;
+    &lt;div class="different-column-item"&gt;Column 2&lt;/div&gt;
+    &lt;div class="different-column-item"&gt;Column 3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
     </section>
     <section>
       <h2>RWD Media Queries</h2>
@@ -190,6 +475,76 @@
     &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
+
+      <h3>Example 1: Change Font Size with Media Queries</h3>
+      <p>Adjust the font size based on screen width:</p>
+      <pre><code>/* styles.css */
+.font-size-example {
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .font-size-example {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .font-size-example {
+        font-size: 14px;
+    }
+}</code></pre>
+      <p>Adjust the font size based on screen width:</p>
+      <pre><code>&lt;p class="font-size-example"&gt;This text changes size based on screen width.&lt;/p&gt;</code></pre>
+
+      <h3>Example 2: Responsive Background Images</h3>
+      <p>Use media queries to change background images:</p>
+      <pre><code>/* styles.css */
+.background-example {
+    background-image: url('bg-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .background-example {
+        background-image: url('bg-tablet.jpg');
+    }
+}
+
+@media (max-width: 480px) {
+    .background-example {
+        background-image: url('bg-mobile.jpg');
+    }
+}</code></pre>
+      <p>Change background images based on screen width:</p>
+      <pre><code>&lt;div class="background-example"&gt;
+    Background Image Example
+&lt;/div&gt;</code></pre>
+
+      <h3>Example 3: Responsive Text Alignment</h3>
+      <p>Change text alignment based on screen width:</p>
+      <pre><code>/* styles.css */
+.text-alignment-example {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .text-alignment-example {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-alignment-example {
+        text-align: right;
+    }
+}</code></pre>
+      <p>Change text alignment based on screen width:</p>
+      <pre><code>&lt;p class="text-alignment-example"&gt;This text changes alignment based on screen width.&lt;/p&gt;</code></pre>
     </section>
   </main>
 </body>

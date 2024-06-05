@@ -1,147 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UFLIP CSS Course</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="img/favicon.png" type="image/png" />
-    <script src="js/main.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <h1>UFLIP CSS Course</h1>
-    </header>
-    <nav id="nav-bar">
-      <ul>
-        <li>
-          <div class="logo">
-            <a href="index.html">
-              <img src="img/UFLIP.png" alt="UFLIP Logo" width="80px" height="15px" />
-            </a>
-          </div>
-        </li>
-        <!-- <li><a href="colorsandbackgrounds.html">Colors and Backgrounds</a></li>
-        <li><a href="boxmodelandlayout.html">Box Model and Layout</a></li>
-        <li><a href="typographyandtextstyling.html">Typography and Text Styling</a></li>
-        <li><a href="listsandtablesandforms.html">Lists, Tables, and Forms</a></li>
-        <li><a href="positioningandlayout.html">Positioning and Layout</a></li>
-        <li><a href="advancedselectorsandpseudoclasses.html">Advanced Selectors and Pseudo-classes</a></li>
-        <li><a href="advancedeffectsandanimations.html">Advanced Effects and Animations</a></li>
-        <li><a href="navigationanduielements.html">Navigation and UI Elements</a></li>
-        <li><a href="imagesandmedia.html">Images and Media</a></li>
-        <li><a href="responsivedesign2.html" class="active">Responsive Design</a></li>
-        <li><a href="cssgrid.html">CSS Grid</a></li>
-        <li><a href="flexboxandlayouttechniques.html">Flexbox and Layout Techniques</a></li>
-        <li><a href="advancedfeaturesandfunctions.html">Advanced Features and Functions</a></li>
-        <li><a href="toolsreferencesandpractices.html">Tools, References, and Practices</a></li> -->
-      </ul>
-      <footer>
-        <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
-      </footer>
-    </nav>
-    <main id="main-content">
-      <section>
-        <h2>CSS Variables</h2>
-        <p>
-          Learn how to use CSS variables to store values and reuse them
-          throughout your CSS.
-        </p>
-        <h3>Example: Using CSS Variables</h3>
-        <pre><code>/* styles.css */
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UFLIP CSS Course</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="img/favicon.png" type="image/png" />
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>UFLIP CSS Course</h1>
+  </header>
+  <nav id="nav-bar">
+    <ul>
+      <li>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/UFLIP.png" alt="UFLIP Logo" width="80px" height="15px" />
+          </a>
+        </div>
+      </li>
+      <!-- Navigation items -->
+    </ul>
+    <footer>
+      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+    </footer>
+  </nav>
+  <main id="main-content">
+    <section>
+      <h2>CSS Variables</h2>
+      <p>Learn how to use CSS variables to store values and reuse them throughout your CSS.</p>
+      <h3>Example: Using CSS Variables</h3>
+      <pre><code>/* styles.css */
 :root {
-    --main-bg-color: #1c75bc;
-    --main-text-color: #ffffff;
+  --main-bg-color: #1c75bc;
+  --main-text-color: #ffffff;
 }
 
 .variable-example {
-    background-color: var(--main-bg-color);
-    color: var(--main-text-color);
-    padding: 20px;
-    font-size: 18px;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  padding: 20px;
+  font-size: 18px;
 }</code></pre>
-        <p>Here's an example HTML using CSS Variables:</p>
-        <pre><code>&lt;!DOCTYPE html&gt;
+      <p>Here's an example HTML using CSS Variables:</p>
+      <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;CSS Variables Example&lt;/title&gt;
-    &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;CSS Variables Example&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;div class="variable-example"&gt;This is a sample div.&lt;/div&gt;
+  &lt;div class="variable-example"&gt;This is a sample div.&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-        <h3>Exercise: Create a CSS Variable</h3>
-        <p>Try creating and using a CSS variable in your stylesheet:</p>
-        <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;CSS Variables Exercise&lt;/title&gt;
-    &lt;link rel="stylesheet" href="styles.css"&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div class="variable-exercise"&gt;This is a sample div.&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-      </section>
-      <section>
-        <h2>CSS Math Functions</h2>
-        <p>
-          Discover how to use CSS math functions, such as calc(), to perform
-          calculations in your CSS.
-        </p>
-        <h3>Example: Using calc()</h3>
-        <pre><code>/* styles.css */
+      <h3>Exercises</h3>
+      <ol>
+        <li>Create a CSS variable for the font size and apply it to a paragraph.</li>
+        <li>Define CSS variables for primary and secondary colors and use them to style different elements.</li>
+        <li>Create a theme switcher that changes CSS variables on button click to switch between light and dark modes.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>CSS Math Functions</h2>
+      <p>Discover how to use CSS math functions, such as <code>calc()</code>, to perform calculations in your CSS.</p>
+      <h3>Example: Using <code>calc()</code></h3>
+      <pre><code>/* styles.css */
 .calc-example {
-    width: calc(100% - 40px);
-    padding: 20px;
-    background-color: #1c75bc;
-    color: white;
-    text-align: center;
+  width: calc(100% - 40px);
+  padding: 20px;
+  background-color: #1c75bc;
+  color: white;
+  text-align: center;
 }</code></pre>
-
-        <h3>Exercise: Use calc() in CSS</h3>
-        <p>Try using the calc() function to set the width of an element:</p>
-        <pre><code>&lt;!DOCTYPE html&gt;
+      <p>Here's an example HTML using <code>calc()</code>:</p>
+      <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;CSS Math Functions Exercise&lt;/title&gt;
-    &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;CSS Math Functions Example&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;div class="calc-exercise"&gt;This is a sample div.&lt;/div&gt;
+  &lt;div class="calc-example"&gt;This is a sample div.&lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-      </section>
-    </main>
-  </body>
+      <h3>Exercises</h3>
+      <ol>
+        <li>Use <code>calc()</code> to set the height of an element to be half the viewport height minus 20px.</li>
+        <li>Create a responsive layout that uses <code>calc()</code> to adjust margins and paddings based on the screen size.</li>
+        <li>Implement a flexible grid system using <code>calc()</code> to set the width of the columns.</li>
+      </ol>
+    </section>
+  </main>
+</body>
 </html>
-```
-
-### JavaScript (`main.js`)
-
-Ensure your JavaScript (`main.js`) to handle the navigation links without scrolling back to the top remains the same:
-
-```javascript
-document.addEventListener('DOMContentLoaded', function () {
-  const navLinks = document.querySelectorAll('.nav-link');
-
-  navLinks.forEach(link => {
-    link.addEventListener('click', function (event) {
-      event.preventDefault();
-      const href = this.getAttribute('href');
-      fetch(href)
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('main-content').innerHTML = new DOMParser().parseFromString(html, 'text/html').getElementById('main-content').innerHTML;
-          window.history.pushState({ path: href }, '', href);
-        });
-    });
-  });
-});

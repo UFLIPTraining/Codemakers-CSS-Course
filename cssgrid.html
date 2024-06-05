@@ -1,197 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UFLIP CSS Course</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" href="img/favicon.png" type="image/png" />
-    <script src="js/main.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <h1>UFLIP CSS Course</h1>
-    </header>
-    <nav id="nav-bar">
-      <ul>
-        <li>
-          <div class="logo">
-            <a href="index.html">
-              <img src="img/UFLIP.png" alt="UFLIP Logo" width="80px" height="15px" />
-            </a>
-          </div>
-        </li>
-        <!-- <li><a href="colorsandbackgrounds.html">Colors and Backgrounds</a></li>
-        <li><a href="boxmodelandlayout.html">Box Model and Layout</a></li>
-        <li><a href="typographyandtextstyling.html">Typography and Text Styling</a></li>
-        <li><a href="listsandtablesandforms.html">Lists, Tables, and Forms</a></li>
-        <li><a href="positioningandlayout.html">Positioning and Layout</a></li>
-        <li><a href="advancedselectorsandpseudoclasses.html">Advanced Selectors and Pseudo-classes</a></li>
-        <li><a href="advancedeffectsandanimations.html">Advanced Effects and Animations</a></li>
-        <li><a href="navigationanduielements.html">Navigation and UI Elements</a></li>
-        <li><a href="imagesandmedia.html">Images and Media</a></li>
-        <li><a href="responsivedesign2.html" class="active">Responsive Design</a></li>
-        <li><a href="cssgrid.html">CSS Grid</a></li>
-        <li><a href="flexboxandlayouttechniques.html">Flexbox and Layout Techniques</a></li>
-        <li><a href="advancedfeaturesandfunctions.html">Advanced Features and Functions</a></li>
-        <li><a href="toolsreferencesandpractices.html">Tools, References, and Practices</a></li> -->
-      </ul>
-      <footer>
-        <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
-      </footer>
-    </nav>
-    </header>
-    <main id="main-content">
-      <section>
-        <h2>CSS Grid Introduction</h2>
-        <p>
-          Learn the basics of CSS Grid, including grid containers, grid items,
-          and grid lines.
-        </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UFLIP CSS Course</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="img/favicon.png" type="image/png" />
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>UFLIP CSS Course</h1>
+  </header>
+  <nav id="nav-bar">
+    <ul>
+      <li>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/UFLIP.png" alt="UFLIP Logo" width="80px" height="15px" />
+          </a>
+        </div>
+      </li>
+      <!-- Navigation items can be added here -->
+    </ul>
+    <footer>
+      <p>&copy; 2024 - UFLIP LLC. All Rights Reserved.</p>
+    </footer>
+  </nav>
+  <main id="main-content">
+    <section>
+      <h2>CSS Grid Introduction</h2>
+      <p>Learn the basics of CSS Grid, including grid containers, grid items, and grid lines.</p>
 
-        <h3>Simple Grid Layout</h3>
-        <p>
-          To create a simple grid layout, you can use the following example:
-        </p>
-        <pre><code>/* styles.css */
+      <h3>Simple Grid Layout</h3>
+      <p>To create a simple grid layout, you can use the following example:</p>
+      <pre><code>/* styles.css */
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    background-color: #333;
-    padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  background-color: #333;
+  padding: 10px;
 }
 
 .grid-item {
-    background-color: #1c75bc;
-    color: white;
-    border: 1px solid #444;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
+  background-color: #1c75bc;
+  color: white;
+  border: 1px solid #444;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }</code></pre>
-        <p>Start by creating a simple grid layout:</p>
-        <pre><code>&lt;!DOCTYPE html&gt;
+      <p>Start by creating a simple grid layout:</p>
+      <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;CSS Grid Example&lt;/title&gt;
-    &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;CSS Grid Example&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;div class="grid-container"&gt;
-        &lt;div class="grid-item"&gt;1&lt;/div&gt;
-        &lt;div class="grid-item"&gt;2&lt;/div&gt;
-        &lt;div class="grid-item"&gt;3&lt;/div&gt;
-        &lt;div class="grid-item"&gt;4&lt;/div&gt;
-        &lt;div class="grid-item"&gt;5&lt;/div&gt;
-        &lt;div class="grid-item"&gt;6&lt;/div&gt;
-    &lt;/div&gt;
+  &lt;div class="grid-container"&gt;
+    &lt;div class="grid-item"&gt;1&lt;/div&gt;
+    &lt;div class="grid-item"&gt;2&lt;/div&gt;
+    &lt;div class="grid-item"&gt;3&lt;/div&gt;
+    &lt;div class="grid-item"&gt;4&lt;/div&gt;
+    &lt;div class="grid-item"&gt;5&lt;/div&gt;
+    &lt;div class="grid-item"&gt;6&lt;/div&gt;
+  &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-      </section>
 
-      <section>
-        <h2>CSS Grid Container</h2>
-        <p>Discover how to create and style grid containers in CSS Grid.</p>
+      <h3>Exercises</h3>
+      <ol>
+        <li>Create a grid container with 4 columns and 2 rows. Place 8 grid items inside it and style them differently from the example above.</li>
+        <li>Adjust the gap between the grid items to 20px and change the background color of the grid container.</li>
+        <li>Experiment with different values for <code>grid-template-columns</code> (e.g., <code>repeat(4, 1fr)</code>, <code>1fr 2fr 1fr</code>).</li>
+      </ol>
+    </section>
 
-        <h3>Grid Container with Rows and Columns</h3>
-        <p>Create a grid container with specified rows and columns:</p>
-        <pre><code>/* styles.css */
+    <section>
+      <h2>CSS Grid Container</h2>
+      <p>Discover how to create and style grid containers in CSS Grid.</p>
+
+      <h3>Grid Container with Rows and Columns</h3>
+      <p>Create a grid container with specified rows and columns:</p>
+      <pre><code>/* styles.css */
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
-    gap: 10px;
-    background-color: #333;
-    padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  gap: 10px;
+  background-color: #333;
+  padding: 10px;
 }
 
 .grid-item {
-    background-color: #1c75bc;
-    color: white;
-    border: 1px solid #444;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
+  background-color: #1c75bc;
+  color: white;
+  border: 1px solid #444;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }</code></pre>
-        <p>Create a grid container with specified rows and columns:</p>
-        <pre><code>&lt;!DOCTYPE html&gt;
+      <p>Create a grid container with specified rows and columns:</p>
+      <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;CSS Grid Container&lt;/title&gt;
-    &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;CSS Grid Container&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;div class="grid-container"&gt;
-        &lt;div class="grid-item"&gt;1&lt;/div&gt;
-        &lt;div class="grid-item"&gt;2&lt;/div&gt;
-        &lt;div class="grid-item"&gt;3&lt;/div&gt;
-        &lt;div class="grid-item"&gt;4&lt;/div&gt;
-        &lt;div class="grid-item"&gt;5&lt;/div&gt;
-        &lt;div class="grid-item"&gt;6&lt;/div&gt;
-    &lt;/div&gt;
+  &lt;div class="grid-container"&gt;
+    &lt;div class="grid-item"&gt;1&lt;/div&gt;
+    &lt;div class="grid-item"&gt;2&lt;/div&gt;
+    &lt;div class="grid-item"&gt;3&lt;/div&gt;
+    &lt;div class="grid-item"&gt;4&lt;/div&gt;
+    &lt;div class="grid-item"&gt;5&lt;/div&gt;
+    &lt;div class="grid-item"&gt;6&lt;/div&gt;
+  &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-      </section>
 
-      <section>
-        <h2>CSS Grid Item</h2>
-        <p>Explore how to position and style grid items in CSS Grid.</p>
+      <h3>Exercises</h3>
+      <ol>
+        <li>Create a grid container with 3 columns and 3 rows. Style the grid items to occupy specific rows and columns.</li>
+        <li>Adjust the <code>grid-template-columns</code> to use different units (e.g., percentages, fixed widths).</li>
+        <li>Experiment with the <code>grid-template-rows</code> property to create varying row heights.</li>
+      </ol>
+    </section>
 
-        <h3>Position Grid Items</h3>
-        <p>Position grid items within a grid container:</p>
-        <pre><code>/* styles.css */
+    <section>
+      <h2>CSS Grid Item</h2>
+      <p>Explore how to position and style grid items in CSS Grid.</p>
+
+      <h3>Position Grid Items</h3>
+      <p>Position grid items within a grid container:</p>
+      <pre><code>/* styles.css */
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px 100px;
-    gap: 10px;
-    background-color: #333;
-    padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px 100px;
+  gap: 10px;
+  background-color: #333;
+  padding: 10px;
 }
 
 .grid-item {
-    background-color: #1c75bc;
-    color: white;
-    border: 1px solid #444;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
+  background-color: #1c75bc;
+  color: white;
+  border: 1px solid #444;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .item1 {
-    grid-column: 1 / span 2;
+  grid-column: 1 / span 2;
 }
 
 .item2 {
-    grid-column: 3;
-    grid-row: 1 / span 2;
+  grid-column: 3;
+  grid-row: 1 / span 2;
 }</code></pre>
-        <p>Position grid items within a grid container:</p>
-        <pre><code>&lt;!DOCTYPE html&gt;
+      <p>Position grid items within a grid container:</p>
+      <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;CSS Grid Item&lt;/title&gt;
-    &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;CSS Grid Item&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;div class="grid-container"&gt;
-        &lt;div class="grid-item item1"&gt;1&lt;/div&gt;
-        &lt;div class="grid-item item2"&gt;2&lt;/div&gt;
-        &lt;div class="grid-item item3"&gt;3&lt;/div&gt;
-        &lt;div class="grid-item item4"&gt;4&lt;/div&gt;
-        &lt;div class="grid-item item5"&gt;5&lt;/div&gt;
-        &lt;div class="grid-item item6"&gt;6&lt;/div&gt;
-    &lt;/div&gt;
+  &lt;div class="grid-container"&gt;
+    &lt;div class="grid-item item1"&gt;1&lt;/div&gt;
+    &lt;div class="grid-item item2"&gt;2&lt;/div&gt;
+    &lt;div class="grid-item"&gt;3&lt;/div&gt;
+    &lt;div class="grid-item"&gt;4&lt;/div&gt;
+    &lt;div class="grid-item"&gt;5&lt;/div&gt;
+    &lt;div class="grid-item"&gt;6&lt;/div&gt;
+  &lt;/div&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-      </section>
-    </main>
-  </body>
+
+      <h3>Exercises</h3>
+      <ol>
+        <li>Create a grid container and position items using the <code>grid-column</code> and <code>grid-row</code> properties.</li>
+        <li>Use the <code>grid-area</code> property to place grid items in specific areas of the grid container.</li>
+        <li>Experiment with spanning multiple rows and columns with grid items.</li>
+      </ol>
+    </section>
+  </main>
+</body>
 </html>
