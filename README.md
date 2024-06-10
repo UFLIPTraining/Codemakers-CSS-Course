@@ -8,6 +8,7 @@
 3. exercies that encurage you to play around with things yourself for a little bit like pretty much no requirements  just letting you experiment you could add it's own tab for those exercieses 
 4. encourage novices to use the web when they get stuck somewhere like MDN Web Docs, CSS-Tricks, and W3Schools or the encyclopedia if you've added it
 5. look into making some of the exercieses more compatible with uuki
+6. I liked how you showed an example of how the final project looks like in the html course you should try that in the css 
 
 ## Positives
 1. Tons of exercieses throughout the course to practice css
