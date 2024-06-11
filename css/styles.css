@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background: #1c75bc;
+  background: #9747ff;
   color: #fff;
   padding: 1em;
   text-align: center;
@@ -55,7 +55,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-  background: #1c75bc;
+  background: #9747ff;
   color: #fff;
 }
 
@@ -117,10 +117,15 @@ footer p {
 }
 
 .dropdown-content li a:hover {
-  background: #1c75bc;
+  background: #9747ff;
 }
 
 /* Show the dropdown menu on hover */
 nav ul li:hover .dropdown-content {
   display: block;
+}
+
+/* Links Color */
+a {
+  color: #fff; /* Ensure links are white */
 }
